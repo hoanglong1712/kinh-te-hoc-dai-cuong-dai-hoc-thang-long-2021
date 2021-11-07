@@ -1,0 +1,180 @@
+\documentclass{report}
+\usepackage{listings}
+\usepackage[utf8]{vietnam}
+\usepackage{pgfplots}
+\usepackage[shortlabels]{enumitem}
+
+\usetikzlibrary{arrows}
+\usepgfplotslibrary{polar}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc}
+
+\pgfplotsset{compat=1.18}
+
+
+
+\begin{document}
+
+\setcounter{chapter}{2}
+\chapter{CÁC LỰC LƯỢNG 
+CUNG CẦU TRÊN THỊ 
+TRƯỜNG}
+
+\section{Điều gì xảy ra với giá và lượng cân bằng trên thị trường máy lạnh trong các
+  tình huống sau:}
+
+\begin{enumerate}[(a)]
+    \item Thời tiết trở lên nóng bất thường, người bán không thay đổi lượng bán ra.
+    \item  Lượng máy lạnh nhập khẩu gia tăng
+    \item  Giá điện tăng cao, người bán không thay đổi lượng bán ra.
+    \item  Các nhà khoa học khuyến cáo, máy lạnh có hại cho sức khỏe.
+    \item  Thu nhập của người tiêu dùng giảm mạnh do suy thoái kinh tế.
+    \item  Nhiều doanh nghiệp rời bỏ thị trường do chính phủ tăng thuế.
+    \item  a và b xảy ra đồng thời nhưng ảnh hưởng của a mạnh hơn.
+    \item  e và f xảy ra đồng thời
+\end{enumerate}
+
+\section{Cung – cầu về sản phẩm Y có dạng: $Q_S = 2P - 8$ và $Q_D = 15 - 0.5P$
+  (trong đó Q tính bằng triệu tấn, P tính bằng nghìn đồng/tấn)}
+
+\begin{enumerate}[(a)]
+    \item Xác định giá và sản lượng cân bằng của sản phẩm Y.
+    \\
+    $Q_S = Q_D$
+    \\ 
+    $2P - 8 = 15 - 0.5P$
+    \\
+    $2.5P = 15 + 8 $
+    \\
+    $2.5P = 23$
+    \\ 
+    $P = 9.2$
+    \\
+    $Q_S = Q_D = 10.4$
+
+    \begin{tikzpicture}
+        \draw [->] (0,0) -- (5,0)node[right] {$Q$};
+        \draw [->] (0,0) -- (0,5)node[above] {$P$};
+        \draw[scale = 0.1, domain=0:20, smooth, variable=\x, color=blue] plot ({\x}, {\x /2 + 4});
+        \draw[scale = 0.1, domain=0:20, smooth, variable=\x, color=red] plot ({\x}, {30 - 2 * \x});
+        \filldraw[scale = 0.1, color=purple] (10.4, 9.2) circle (5pt) node[anchor=west]{A (10.4, 9.2)};
+    \end{tikzpicture}
+
+    \item Vì một lý do nào đó lượng cầu giảm 1 triệu tấn ở mọi mức giá, khi đó giá và lượng thay
+          đổi như thế nào. Vẽ đồ thị minh họa câu a và câu b trên cùng một đồ thị
+    \\ giá giảm , lượng cũng giảm
+    \\
+    cũ $Q_D = 15 - 0.5P$ 
+    \\
+    mới $Q_D = 14 - 0.5P$
+    \\
+    \begin{tikzpicture}
+        \draw [->] (0,0) -- (5,0)node[right] {$Q$};
+        \draw [->] (0,0) -- (0,5)node[above] {$P$};
+
+        \draw[scale = 0.2, domain=0:20, smooth, variable=\x, color=green] plot ({\x}, {28 - 2 * \x});
+
+        \draw[scale = 0.2, domain=0:20, smooth, variable=\x, color=blue] plot ({\x}, {\x /2 + 4});
+        \draw[scale = 0.2, domain=0:20, smooth, variable=\x, color=red] plot ({\x}, {30 - 2 * \x});
+        \filldraw[scale = 0.2, color=purple] (10.4, 9.2) circle (5pt) node[anchor=west]{A};
+    \end{tikzpicture}
+    
+    \item Do giá nguyên liệu sản xuất sản phẩm Y giảm nên lượng cung tăng 10 \% tại mọi mức giá. Xác định giá và lượng cân bằng mới. Vẽ đồ thị minh họa câu a và câu c trên cùng  một đồ thị
+    \\
+    phương trình cũ :
+    $Q_S = 2P - 8$ 
+
+    trước đấy với số tiền 2P - 8
+    chúng ta mua được $Q_S$
+    do cung tăng 10 \% với mọi mức gía
+    ý ở ở đây là P giữ nguyên
+    \\
+    thì ta sẽ mua được như sau:
+    2P - 8  + 0.1 * (2P - 8)
+
+    $Q_S = (2P - 8) + 0.1 * (2P - 8)$
+
+    $Q_S = 2.2P - 8.8$
+   
+    ta tìm điểm cân băng mới
+
+    $2.2P - 8.8 = 15 - 0.5P$
+
+    $ 2.7P = 15 + 8.8 = 23.8 $
+
+    $ P_{cb} = 8.81$
+
+    $Q_{cb} = 15 - 0.5 * 8.81 =  10.59$
+    
+    $Q_S = 2.2P - 8.8$
+
+    $2.2 P = Q_S + 8.8$
+
+    $P = Q_S / 2.2 + 4$
+
+
+
+    \begin{tikzpicture}
+        \draw [->] (-3,0) -- (5,0)node[right] {$Q$};
+        \draw [->] (0,0) -- (0,5)node[above] {$P$};
+        \draw[scale = 0.2, domain=-10:20, smooth, variable=\x, color=green] plot ({\x}, {  \x / 2.2 + 4});
+        
+        \draw[scale = 0.2, domain=-10:20, smooth, variable=\x, color=blue] plot ({\x}, { 0.5 * \x  + 4});
+
+        \filldraw[scale = 0.2, color=purple] (10.59, 8.81) circle (5pt) node[anchor=west]{A};
+        
+        \draw[scale = 0.2, domain=0:20, smooth, variable=\x, color=red] plot ({\x}, {30 - 2 * \x});
+
+       
+    \end{tikzpicture}
+
+    \item Khi giá bán trên thị trường là 8 nghìn đồng/tấn thì thị trường xảy ra tình trạng gì? doanh
+          thu thu được tại mức giá này là bao nhiêu?
+
+        thiếu hụt hàng hóa 
+        doanh thu tính như sau $Q_D = 15 - 0.5P$ $Q_D = 15 - 0.5 * 8$ $Q_D = 11$
+
+        doanh thu bằng Q * P = 11 * 8 = 88
+
+        \begin{tikzpicture}
+            \draw [->] (0,0) -- (5,0)node[right] {$Q$};
+            \draw [->] (0,0) -- (0,5)node[above] {$P$};
+            \draw[scale = 0.2, domain=0:20, smooth, variable=\x, color=blue] plot ({\x}, {\x /2 + 4});
+            \draw[scale = 0.2, domain=0:20, smooth, variable=\x, color=red] plot ({\x}, {30 - 2 * \x});
+            \filldraw[scale = 0.2, color=purple] (10.4, 9.2) circle (5pt) node[anchor=west]{A};
+
+            \draw[scale = 0.2, domain=0:20, smooth, variable=\x, color=green] (8,8) -- (11, 8);
+            
+            \filldraw[scale = 0.2] (8,8) circle (5pt) node[anchor=north]{B};
+        \end{tikzpicture}
+    \item Khi giá bán trên thị trường là 11 nghìn đồng/tấn thì thị trường xảy ra hiện tượng dư cung
+          hay dư cầu? Tính mức dư cung hoặc dư cầu? Tính doanh thu thu được tại mức giá này là
+          bao nhiêu?
+
+          dư thừa hàng hóa
+
+          doanh thu tính như sau $Q_S = 2P - 8$ $Q_S = 2 * 11 - 8$ $Q_S = 14$
+
+           doanh thu bằng Q * P = 11 * 14 = 154
+           
+          \begin{tikzpicture}
+            \draw [->] (0,0) -- (5,0)node[right] {$Q$};
+            \draw [->] (0,0) -- (0,5)node[above] {$P$};
+            \draw[scale = 0.2, domain=0:20, smooth, variable=\x, color=blue] plot ({\x}, {\x /2 + 4});
+            \draw[scale = 0.2, domain=0:20, smooth, variable=\x, color=red] plot ({\x}, {30 - 2 * \x});
+            \filldraw[scale = 0.2, color=purple] (10.4, 9.2) circle (5pt) node[anchor=west]{A};
+
+            \draw[scale = 0.2, domain=0:20, smooth, variable=\x, color=green] (14,11) -- (9.5, 11);
+
+            \filldraw[scale = 0.2] (9.5, 11) circle (5pt) node[anchor=east]{B};
+
+        \end{tikzpicture}
+\end{enumerate}
+
+\begin{tikzpicture}
+    \draw [->] (0,0) -- (5,0);
+    \draw [->] (0,0) -- (0,5);
+    \draw [red]  (2,3) -- (0,4);
+\end{tikzpicture}
+
+\end{document}
