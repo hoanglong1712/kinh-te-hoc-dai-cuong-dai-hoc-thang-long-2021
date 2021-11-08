@@ -171,10 +171,190 @@ TRƯỜNG}
         \end{tikzpicture}
 \end{enumerate}
 
+
+
+\section{ Cho số liệu về cung – cầu sản phẩm A như sau:}
+\begin{tabular}{|c|c|c|}
+    Giá (100đ/ 1kg) & Lượng cầu (kg) & Lượng cung(kg) \\
+    \hline
+    7               & 20             & 11             \\
+    \hline
+    8               & 19             & 13             \\
+    \hline
+    9               & 18             & 15             \\
+    \hline
+\end{tabular}
+
+
+\begin{enumerate}[(a)]
+    \item Viết phương trình đường cung, đường cầu, xác định giá và lượng cân bằng. Doanh thu
+          tại trạng thái cân bằng.
+          \\
+          chúng ta nhắc lại về phương pháp tính phương trình đường thẳng trong hệ tọa độ Đề Các
+
+          phương trình đường thẳng
+          đi qua 2 điểm trong hệ tọa độ Đề Các
+
+          ta có trục Ox và trục Oy
+
+          $A * (x - x_0) + B * (y - y_0) = 0$
+
+          ta đã có $x_0$ và $y_0$
+          vi dụ $x_0 = 20$ và $y_0 = 7$
+
+          ta cần tìm A và B
+          chúng ta nhơ lại rằng (A, B) là véc tơ pháp tuyến  của đương thẳng đi qua 2 điểm cho trước
+
+          muốn tìm  vec tơ pháp tuyến ta cần tìm véc tơ chỉ phương
+
+          vec tơ chỉ phương sẽ tính như sau
+
+          giả sử chúng tâ có 2 điểm
+          $M(20, 7)$ $N(19, 8)$
+
+          véc tơ MN = (19 - 20, 8 - 7) = (-1, 1)
+
+          vậy ta đã có véc tơ chỉ phương
+
+          vec tơ pháp tuyến tính như sau
+
+          công thức
+          chỉ phương = (C, D)
+          pháp tuyến = (-D, C)
+
+          MN =  (-1, 1)
+          $\Rightarrow$ pháp tuyến = (-1, -1)
+
+          phương trình đường cầu
+
+          $A * (x - x_0) + B * (y - y_0) = 0$
+
+          (A, B) = (-1-, -1)
+
+          $x_0 = 20$ $y_0= 7$
+
+          $-1 * (x - 20) + (-1) * (y - 7) = 0$
+
+          $-x + 20 - y + 7 = 0$
+
+          $-x - y + 27 = 0$
+
+          $x = 27 - y$
+
+          $Q_D = 27 - P$
+
+          đường cung
+          MN = (13 - 11, 8 - 7) = (2, 1)
+          pháp tuyến = (-1, 2)
+
+          phương trình đường cung
+
+          $-1 * (x - 11) + (2) * (y - 7) = 0$
+
+          $-x + 11 + 2y - 7 = 0$
+
+          $-x + 2y + 4 = 0$
+
+          $4 + 2y = x$
+
+          $Q_S = 4 + 2P$
+
+
+
+          kết luận
+          ta có
+
+          $Q_S = 2P + 4$,
+          $Q_D = 27 - P$
+
+          $P = Q_S / 2 - 2$ $y = x / 2 - 2$
+
+          $P = 27 - Q_D$
+
+          tính điểm giao của 2 đường thăng - điểm cân bằng
+
+          $Q_S = Q_D$
+
+          $2P + 4 = 27 - P$
+
+          $3P = 23 \rightarrow P = 7.6, Q = 19.4$
+
+          Doanh thu tại trạng thái cân bằng.:
+          P * Q = 7.6 * 19.4
+
+          \begin{tikzpicture}
+              \draw [->] (0,0) -- (5,0)node[right] {$Q$};
+              \draw [->] (0,0) -- (0,5)node[above] {$P$};
+              \draw[scale = 0.1, domain=0:30, smooth, variable=\x, color=blue] plot ({\x}, {\x /2 - 2});
+              \draw[scale = 0.1, domain=0:30, smooth, variable=\x, color=red] plot ({\x}, {27 - \x});
+              \filldraw[scale = 0.1, color=purple] (19.4, 7.6) circle (5pt) node[anchor=west]{A};
+          \end{tikzpicture}
+
+
+    \item Vì lý do nào đó, lượng cung sản phẩm A tăng lên một lượng là 6 kg ở mỗi mức giá. Hãy
+          xác định mức giá và sản lượng, tổng doanh thu tại trạng thái cân bằng mới?.
+
+          cũ
+          $Q_S = 2P + 4$,
+          $Q_D = 27 - P$
+
+          mới
+          $Q_S = (2P + 4) + 6$,
+          $Q_D = 27 - P$
+
+          $ \Rightarrow Q_S = 2P + 10$,
+          $Q_D = 27 - P$
+
+          $Q_S = Q_D$
+
+          $2P + 10 = 27 - P$
+
+          $3P = 17 \rightarrow P = 6.3, Q = 21.7 \rightarrow$ tổng doanh thu là 6.3 * 21.7
+
+    \item Giả sử Chính phủ áp đặt giá bán trên thị trường là 11 nghìn đồng/kg và hứa mua hết phần
+          sản phẩm thừa, thì số tiền chính phủ phải chi ra là bao nhiêu?
+
+    đường thẳng song song với trục hoành
+    y = 11 là đường giá cố định của chính phủ
+
+    ta cần tính giáo của đường cung với đường áp giá để tìm ra lượng hàng cần tiêu thụ
+
+    $Q_S = 2P + 4$,
+    thay P  = 11 vào ta có 
+
+    $Q_S = 2 * 11 + 4 = 26$,
+
+    $Q_D = 27 - P$
+    thay P  = 11 vào ta có 
+
+    $Q_D = 27 - 11 = 16$
+
+    lượng Dư thừa = $Q_S - Q_D = 26 - 16 = 10$
+
+    vậy chính phủ cần mua 10 kg
+    , số tiền bỏ ra là 10 * 11 = 110 
+
+          \begin{tikzpicture}
+            \draw [->] (0,0) -- (5,0)node[right] {$Q$};
+            \draw [->] (0,0) -- (0,5)node[above] {$P$};
+            \draw[scale = 0.1, domain=0:30, smooth, variable=\x, color=blue] plot ({\x}, {\x /2 - 2});
+            \draw[scale = 0.1, domain=0:30, smooth, variable=\x, color=red] plot ({\x}, {27 - \x});
+            \filldraw[scale = 0.1, color=purple] (19.4, 7.6) circle (5pt) node[anchor=west]{A};
+
+            \draw[scale = 0.1, domain=0:30, smooth, variable=\y, color=green] plot ({\y}, {11});
+
+            \filldraw[scale = 0.1, color=purple] (26, 11) circle (5pt) node[anchor=south]{S};
+
+            \filldraw[scale = 0.1, color=purple] (16, 11) circle (5pt) node[anchor=south]{D};
+        \end{tikzpicture}
+\end{enumerate}
+
 \begin{tikzpicture}
-    \draw [->] (0,0) -- (5,0);
-    \draw [->] (0,0) -- (0,5);
-    \draw [red]  (2,3) -- (0,4);
+    \draw [->] (0,0) -- (5,0)node[right] {$Q$};
+    \draw [->] (0,0) -- (0,5)node[above] {$P$};
+    \draw[scale = 0.1, domain=0:20, smooth, variable=\x, color=blue] plot ({\x}, {\x /2 + 4});
+    \draw[scale = 0.1, domain=0:20, smooth, variable=\x, color=red] plot ({\x}, {30 - 2 * \x});
+    \filldraw[scale = 0.1, color=black] (10.4, 9.2) circle (5pt) node[anchor=west]{A};
 \end{tikzpicture}
 
 \end{document}
