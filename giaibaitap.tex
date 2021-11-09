@@ -1,8 +1,10 @@
 \documentclass{report}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
 \usepackage{listings}
 \usepackage[utf8]{vietnam}
 \usepackage{pgfplots}
 \usepackage[shortlabels]{enumitem}
+
 
 \usetikzlibrary{arrows}
 \usepgfplotslibrary{polar}
@@ -11,9 +13,29 @@
 
 \pgfplotsset{compat=1.18}
 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=blue,
+    urlcolor=blue
+}
 
+\title{Giải \& diễn đạt bài tập Kinh tế học đại cương Đại học Thăng Long theo cách dễ hiểu hơn
+}
+\author{Tác giả: Lê Hoàng Long \\ Email: \href{mailto:hoanglong1712@gmail.com}{hoanglong1712@gmail.com} 
+\\ Số điện thoại: \textcolor{blue}{(+84) 0359568862} 
+hoặc \textcolor{blue}{(+84) 0359480290} \\
+Danh sách các video hướng dẫn giải bài tập đi kèm tài liệu này \\
+ \url{https://www.youtube.com/playlist?list=PLIpLw6v7Z1ql_ME2f8F7q4CN38vdjqskw} }
+\date{ }
 
 \begin{document}
+
+\maketitle
+
+\tableofcontents
 
 \setcounter{chapter}{2}
 \chapter{CÁC LỰC LƯỢNG 
@@ -347,6 +369,131 @@ TRƯỜNG}
 
             \filldraw[scale = 0.1, color=purple] (16, 11) circle (5pt) node[anchor=south]{D};
         \end{tikzpicture}
+\end{enumerate}
+
+
+\section{ Cho thị trường hàng hóa A có phương trình đường cung và đường cầu như 
+sau: $P_S = 0,2Q - 10$ và $P_D = 20 - 0.2Q$ (bỏ qua đơn vị của giá và lượng)}
+
+\begin{enumerate}[a.]
+    \item Xác định Giá và sản lượng cân bằng của thị trường?
+    \\
+    $P_S = 0,2Q - 10$ và $P_D = 20 - 0.2Q$
+
+    $0,2Q - 10 = 20 - 0.2Q$
+
+    $0.4Q = 30$
+
+    $Q = 75$
+
+    $P = 20 - 0.2 * 75 = 5$
+
+    \item Giả sử giá bán trên thị trường là P = 10 thì thị trường xảy ra tình trạng gì? Doanh 
+    thu thu được tại mức giá này bằng bao nhiêu?
+   
+
+    \begin{tikzpicture}
+        \draw [->] (0,0) -- (8,0)node[right] {$Q$};
+        \draw [->] (0,0) -- (0,3)node[above] {$P$};
+        \draw[scale = 0.07, domain=0:120, smooth, variable=\x, color=blue] plot ({\x}, {\x /5 - 10});
+        \draw[scale = 0.07, domain=0:80, smooth, variable=\x, color=red] plot ({\x}, {20 - 0.2 * \x});
+        \filldraw[scale = 0.07, color=black] (75, 5) circle (5pt) node[anchor=south]{CB};
+
+        \draw[scale = 0.07, domain=0:120, smooth, variable=\y, color=green] plot ({\y}, {10});
+
+        \filldraw[scale = 0.07, color=black] (50, 10) circle (5pt) node[anchor=south]{Z};
+
+    \end{tikzpicture}
+
+    $P = 10  > P_{CB}= 5$
+     
+    nên  cầu giảm , cung dư, tức là dư thừa hàng hóa
+
+    $P_D = 20 - 0.2Q \Rightarrow P_D - 20 = -0.2 Q $
+
+    $P_D = 10$
+
+    $10 - 20 = -0.2Q  \Rightarrow Q = 50$
+
+    Doanh thu = P * Q = 10 * 50 = 500
+
+    \item Do nhiều hàng hóa thay thế cho hàng hóa A xuất hiện nên lượng cầu về hàng hóa A 
+    giảm 20\% tại mọi mức giá. Hãy tính tác động của của việc giảm cầu này đối với giá ?
+
+    \begin{tikzpicture}
+        \draw [->] (0,0) -- (8,0)node[right] {$Q$};
+        \draw [->] (0,0) -- (0,3)node[above] {$P$};
+        \draw[scale = 0.07, domain=0:120, smooth, variable=\x, color=blue] plot ({\x}, {\x /5 - 10});
+        \draw[scale = 0.07, domain=0:80, smooth, variable=\x, color=red] plot ({\x}, {20 - 0.2 * \x});
+        \filldraw[scale = 0.07, color=black] (75, 5) circle (5pt) node[anchor=south]{CB};
+        
+        \draw[scale = 0.07, domain=0:80, smooth, variable=\x, color=green] plot ({\x}, { 10 - \x / 4 });
+
+    \end{tikzpicture}
+
+    $P_D = 20 - 0.2Q$
+
+    $ -P_D  + 10 = 0.2Q$
+
+    cũ $Q = 50 - 5P_D$
+
+    mới $Q_D = 0.8 * (50 - 5P_D) \Rightarrow Q_D = 40 - 4P_D$
+
+    $P_D = 10 - 0.25Q_D$
+
+    ta tìm điểm cân bằng mới 
+
+    $P_S = 0,2Q - 10 = 10 - 0.25Q$
+
+    $0.45Q = 20 \Rightarrow Q = 44.4$
+
+    $P = 0,2Q - 10 = -1.12$
+
+    từ đây ta có thể thấy là giá thành của sản phẩm A rơi xuống dưới 0, và nhà sản xuất phải đưa thêm tiền cho khách hầng để bán sản phẩm , ở mức cân bằng cảu thị trường việc đó đã từng xảy ra với giá dầu khi dịch covid xảy ra vào năm ngoái 
+
+    \item  Do giá hàng B là hàng thay thế cho A giảm nên lượng cầu về A giảm một lượng 
+    tuyệt đối tại mọi mức giá. Biết lượng cân bằng mới bây giờ là 60. Lập phương trình 
+    đường cầu mới?
+
+    từ lượng cân bằng là Q = 60 và $P_S = 0,2Q - 10$ là cố định
+     ta chỉ ra P = 0.2 * 60 - 10 = 2
+
+     lưu ý rằng lượng cầu giảm tuyệt đối với mọi mức Giá
+     tức là đường cầu mới sẽ song song với đường cầu cũ 
+
+     chúng ta có thể giải thích việc này qua phương trình 
+
+     $y = ax + b$ khi b thay đổi thì đường thẳng mới song song với đường thẳng cũ đó là ý của chữ giảm "tăng"  tuyệt đối với mọi mức Giá
+
+     vậy công việc là viết phương trình đường mới với hệ số cũ 
+     và đi qua điểm cân bằng mới 
+
+     cụ thể phương trình cũ là 
+     $P_D = 20 - 0.2Q$ viết lại là 
+     $P_D + 0.2Q - 20 = 0$, 
+     tá có vec tơ pháp tuyến ở đây là (0.2, 1)
+     phương trình này đi qua  điểm (60, 2)
+
+     phương trình mới sẽ là 
+     $0.2 (x - 60) + 1 (y - 2) = 0$
+
+     $0.2x - 12 + y - 2 = 0 $
+
+     $0.2x + y - 14 = 0$
+
+     $P_D = 14 - 0.2 Q$
+
+     \begin{tikzpicture}
+        \draw [->] (0,0) -- (8,0)node[right] {$Q$};
+        \draw [->] (0,0) -- (0,3)node[above] {$P$};
+        \draw[scale = 0.07, domain=0:120, smooth, variable=\x, color=blue] plot ({\x}, {\x /5 - 10});
+        \draw[scale = 0.07, domain=0:80, smooth, variable=\x, color=red] plot ({\x}, {20 - 0.2 * \x});
+        \filldraw[scale = 0.07, color=black] (75, 5) circle (5pt) node[anchor=south]{CB};
+        
+        \draw[scale = 0.07, domain=0:80, smooth, variable=\x, color=green] plot ({\x}, { 14 - \x / 5 });
+
+        
+    \end{tikzpicture}
 \end{enumerate}
 
 \begin{tikzpicture}
