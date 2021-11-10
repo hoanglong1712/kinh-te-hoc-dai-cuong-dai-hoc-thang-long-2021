@@ -28,7 +28,11 @@
 \\ Số điện thoại: \textcolor{blue}{(+84) 0359568862} 
 hoặc \textcolor{blue}{(+84) 0359480290} \\
 Danh sách các video hướng dẫn giải bài tập đi kèm tài liệu này \\
- \url{https://www.youtube.com/playlist?list=PLIpLw6v7Z1ql_ME2f8F7q4CN38vdjqskw} }
+ \url{https://www.youtube.com/playlist?list=PLIpLw6v7Z1ql_ME2f8F7q4CN38vdjqskw} \\
+ Địa chỉ GitHub chứa các tài liệu liên quan : 
+ \\ 
+ \url{https://github.com/hoanglong1712/kinh-te-hoc-dai-cuong-dai-hoc-thang-long-2021}
+ }
 \date{ }
 
 \begin{document}
@@ -495,6 +499,122 @@ sau: $P_S = 0,2Q - 10$ và $P_D = 20 - 0.2Q$ (bỏ qua đơn vị của giá và
         
     \end{tikzpicture}
 \end{enumerate}
+
+\section{  Hàm cầu về sản phẩm X trên thị trường được cho bởi phương trình: $P = 100 - 0,05Q_D$; trong đó Q là sản lượng tính bằng đơn vị, P tính bằng \$. Cung sản phẩm X 
+luôn cố định ở mức 1100 đơn vị.}
+
+\begin{enumerate}[a.]
+    \item Tính giá và sản lượng cân bằng của sản phẩm X.
+    
+    phương trình đường cung có dạng
+    x = b tức là song song với trục tung P
+
+    $Q_S = 1100$
+
+    $P = 100 - 0,05Q_D$
+
+    $0.05Q_D = 100 - P$
+
+    viết lại phương trình đường cầu
+    $Q_D = 2000 - 20P$
+
+    tại điểm cân bằng 
+
+    $Q_D = Q_S$
+
+    $1100 = 2000 - 20P$
+
+    $20P = 2000 - 1100 = 900$
+
+    $P = 45$
+
+    vậy điểm cân bằng là 
+    (1100, 45)
+    Q = 1100, P = 45
+
+    \begin{tikzpicture}
+        \draw [->] (0,0) -- (15,0)node[right] {$Q$};
+        \draw [->] (0,0) -- (0,5)node[above] {$P$};             
+        \draw[scale = 0.08, domain=0:150, smooth, variable=\x, color=red] plot ({\x}, {10 - 0.05 * \x});
+        \draw [-, color=blue, scale = 0.08] (110,0) -- (110,80);             
+        \filldraw[scale = 0.08, color=black] (110, 4.5) circle (5pt) node[anchor=west]{CB};
+    \end{tikzpicture}
+    
+
+    \item  Giả sử nhờ quảng cáo, lượng cầu tại mỗi mức giá tăng thêm 15\%. Giá và sản lượng 
+    cân bằng mới trên thị trường là bao nhiêu. Vẽ hình minh họa?
+
+    phương trình đường cầu
+    $Q_D = 2000 - 20P$
+
+    tại mỗi mức giá chúng ta tăng 15\%
+
+    $Q_D = (2000 - 20P) + 0.15( 2000 - 20P)$
+
+    $Q_D = 1.15(2000 - 20P)$
+
+    $Q_D = 2300 - 23P$
+
+    để tìm giá và sản lượng cân bằng mới 
+    ta lưu ý rằng lượng cung không đổi và là 1100
+    $\Rightarrow$ ta cần tính P
+
+    $1100 = 2300 - 23P$
+
+    $23P = 2300 - 1100 = 1200$
+
+    $P = 52.17$
+
+    điểm cân bằng mới 
+    Q = 1100, P = 52.17
+
+    
+    $Q_D = 2300 - 23P$
+
+    $P = 100 - Q_D / 23 $
+
+    \begin{tikzpicture}
+        \draw [->] (0,0) -- (15,0)node[right] {$Q$};
+        \draw [->] (0,0) -- (0,5)node[above] {$P$};             
+        \draw[scale = 0.08, domain=0:150, smooth, variable=\x, color=red] plot ({\x}, {10 - 0.05 * \x});
+        \draw [-, color=blue, scale = 0.08] (110,0) -- (110,80);         
+        
+        \draw[scale = 0.08, domain=0:150, smooth, variable=\x, color=green] plot ({\x}, {10 - \x / 23});
+        
+        \filldraw[scale = 0.08, color=black] (110, 5.217) circle (8pt) node[anchor=west]{CB};
+    \end{tikzpicture}
+
+    \item  Khi chính phủ áp đặt giá bán trên thị trường là 50 thì doanh thu là bao nhiêu?
+    
+    P = 50
+    lưu ý rằng P cân bằng là 45 mà lượng cung không thay đổi
+    đây gọi là áp giá sàn
+
+    tại điểm P = 50 thì cầu thị trường là $Q_D = 2000 - 20P$
+
+    $Q_D = 2000 - 20 * 50 = 2000  - 1000 = 1000$
+
+
+
+    do đó doanh thu 50 * 1000 = 50000
+     vì nhà nước không cam kết thu mua sản phẩm thừa 
+
+    \begin{tikzpicture}
+        \draw [->] (0,0) -- (15,0)node[right] {$Q$};
+        \draw [->] (0,0) -- (0,5)node[above] {$P$};             
+        \draw[scale = 0.08, domain=0:150, smooth, variable=\x, color=red] plot ({\x}, {10 - 0.05 * \x});
+
+        \draw[scale = 0.08, domain=0:150, smooth, variable=\y, color=green] plot ({\y}, {5});
+
+        \draw [-, color=blue, scale = 0.08] (110,0) -- (110,80);             
+       
+        \filldraw[scale = 0.08, color=black] (110, 4.5) circle (5pt) node[anchor=west]{MUA};
+
+
+    \end{tikzpicture}
+    
+\end{enumerate}
+
 
 \begin{tikzpicture}
     \draw [->] (0,0) -- (5,0)node[right] {$Q$};
