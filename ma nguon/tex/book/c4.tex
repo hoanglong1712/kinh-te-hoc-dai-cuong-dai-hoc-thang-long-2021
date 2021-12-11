@@ -1,0 +1,747 @@
+\chapter{HỆ SỐ CO GIÃN}
+
+%\setcounter{section}{5}
+\section{Tính hệ số co giãn của cầu theo giá của các hàng hóa thịt bò, áo sơ mi, biết rằng:}
+
+\begin{enumerate}[a.]
+  \item  Giá thịt bò ban đầu là 1,7 \$/kg thì bán được 116.250 kg. Khi hạ giá 0,2\$ thì lượng bán tăng thêm 7.500kg.
+
+        ta có công thức như sau
+        \[ E_{DP} = \frac{\%\Delta Q_D}{\%\Delta P} \]
+        với \\
+        $\%\Delta Q_D$: phần trăm thay đổi của lượng cầu \\
+        $\%\Delta P$: phần trăm thay đổi của giá
+
+        ta có \\
+        giá cũ là 1.7, giá hạ 0.2 tức là hạ $0.2/1.7 * 100 = 11.76\%$\\
+        cầu cũ là 116.25 lượng cầu tăng 7.5 tức là tăng
+        $7.5/116.25 * 100 = 6.45\%$
+
+        vậy $E_{DP} = 6.45/(-11.76) = -0.548$
+
+
+  \item Áo sơ mi giá ban đầu 8,1\$/chiếc thì bán được 19.500 chiếc. Khi tăng giá 0,2\$ thì lượng bán giảm 5000 chiếc
+
+        ta có \\
+        giá cũ là 8.1, giá tăng 0.2 tức là tăng $0.2/8.1 * 100 = 2.46\%$\\
+        cầu cũ là 19500 lượng cầu giảm 5000 tức là giảm
+        $5000/19500 * 100 = 25.64\%$
+
+        vậy $E_{DP} = -25.64/2.46 = -10.42$
+\end{enumerate}
+
+\section{Hàm cầu về bánh mỳ của công ty Kinh Đô như sau: $Q_D = 40 - 5P$ (Q :nghìn chiếc ; P: nghìn đồng/chiếc)}
+
+\begin{enumerate}[a.]
+  \item  Tính hệ số co giãn của cầu tại mức giá bẳng 3; và khi giá tăng từ 2 lên 5 theo phương
+        pháp trung điểm.
+
+        nhắc lại về phương pháp trung điểm
+
+        cho khoảng giá
+        \[ E_{DP} = \frac{\%\Delta Q_D}{\%\Delta P} =
+          \frac{\frac{\Delta Q_D}{Q_D} \times 100 \% }{ \frac{\Delta P}{P} \times 100 \%  } =
+          \frac{\Delta Q_D}{\Delta P}  \times
+          \frac{\frac{P_1 + P_2}{2}}{\frac{Q_{D_1} + Q_{D_2}}{2}} \]
+
+        cho điểm
+        \[ E_{DP} = \frac{\%\Delta Q_D}{\%\Delta P} =
+          \frac{\Delta Q_D}{\Delta P} \times \frac{P}{Q_D} = Q_D' \times \frac{P}{Q_D} \]
+        hoặc
+        \[ E_{DP} = \frac{\%\Delta Q_D}{\%\Delta P} =
+          \frac{\Delta Q_D}{\Delta P} \times \frac{P}{Q_D} = \frac{1}{P_D'} \times \frac{P}{Q_D} \]
+
+        lưu ý, $Q_D'$ là đạo hàm của $Q_D$ theo P còn $P_D'$ là đạo hàm của $P_D$ theo Q, nếu ai đó quên thì có thể giở sách giáo khoa lớp 11 môn giải tích để đọc lại \url{https://drive.google.com/file/d/1Ygj-Lw40zs6JHfA--VnH\_Bs-gk2X\_aek/view}
+
+        cụ thể chúng ta sẽ làm như sau
+
+        Tính hệ số co giãn của cầu tại mức giá bẳng 3;
+        ta áp dụng công thức
+        \[ E_{DP} = \frac{\%\Delta Q_D}{\%\Delta P} =
+          \frac{\Delta Q_D}{\Delta P} \times \frac{P}{Q_D} = Q_D' \times \frac{P}{Q_D} \]
+
+        $Q_D' = ( 40 - 5P)' = -5$
+        do đạo hàm của 40 = 0 và đạo hàm của -5P = -5 * đạo hàm của P = (-5) * 1 = -5
+        \[ E_{DP} = \frac{\%\Delta Q_D}{\%\Delta P} = -5 \times \frac{3}{40 - 5 * 3}
+          = -5 \times \frac{3}{25} = -0.6 \]
+
+        và khi giá tăng từ 2 lên 5 theo phương  pháp trung điểm.
+
+        \[ E_{DP} = \frac{\%\Delta Q_D}{\%\Delta P} =
+          \frac{\Delta Q_D}{\Delta P}  \times
+          \frac{\frac{P_1 + P_2}{2}}{\frac{Q_{D_1} + Q_{D_2}}{2}}
+        \]
+        nhắc lại phương trình cầu $Q_D = 40 - 5P$
+
+        $Q_2 = 40 - 5 * 2 = 30$
+
+        $Q_5 = 40 - 5 * 5 = 15$
+
+        $\Delta Q_D = Q_2 - Q_5 = 30 - 15 = 15$
+
+        $\Delta P = 2 - 5 = -3$
+
+        \[ E_{DP} = \frac{\%\Delta Q_D}{\%\Delta P} =
+          \frac{15}{-3}  \times
+          \frac{\frac{2 + 5}{2}}{\frac{30 + 15}{2}} =
+          -5  \times
+          \frac{7}{45} = \frac{-7}{9} = -0.777
+        \]
+
+
+
+  \item Để tăng tổng doanh thu công ty nên áp dụng chính sách giá nào nếu hiện tại công ty
+        đang bán ở mức giá P = 3 và P = 5? Giải thích tại sao?
+
+        chúng ta có bảng sau
+
+        \begin{tabular}{ |c|c|c| }
+          \hline
+                         & \textbf{Khi tăng P}               & \textbf{Khi giảm P}                 \\
+          \hline
+          $|E_{DP}| < 1$ & \% tăng lên của P luôn lớn        & \% giảm xuống của P luôn            \\
+                         & hơn \% giảm xuống của $Q_D$       & lớn hơn \% tăng lên của $Q_D$       \\
+                         & $\Rightarrow$ P tăng thì TR tăng  & $\Rightarrow$ P giảm thì TR giảm    \\
+          \hline
+          $|E_{DP}| > 1$ & \% tăng lên của P luôn nhỏ        & \% giảm xuống của P luôn            \\
+                         & hơn \% giảm xuống của $Q_D$       & nhỏ hơn \% tăng lên của $Q_D$       \\
+                         & $\Rightarrow$ P tăng thì TR giảm  & $\Rightarrow$ P giảm thì TR tăng    \\
+          \hline
+          $|E_{DP}| = 1$ & \% giảm xuống của $Q_D$ bằng      & \% tăng lên của $Q_D$ bằng          \\
+                         & đúng với \% tăng lên của P        & đúng với \% giảm xuống của          \\
+                         & $\Rightarrow$ P tăng TR không đổi & P $\Rightarrow$ P giảm TR không đổi \\
+          \hline
+        \end{tabular}
+
+
+        tại mức giá bẳng 3;
+        ta áp dụng công thức
+        \[ E_{DP} = \frac{\%\Delta Q_D}{\%\Delta P} =
+          \frac{\Delta Q_D}{\Delta P} \times \frac{P}{Q_D} = Q_D' \times \frac{P}{Q_D} \]
+
+        $Q_D' = ( 40 - 5P)' = -5$
+        do đạo hàm của 40 = 0 và đạo hàm của -5P = -5 * đạo hàm của P = (-5) * 1 = -5
+        \[ E_{DP_3} = \frac{\%\Delta Q_D}{\%\Delta P} = -5 \times \frac{3}{40 - 5 * 3}
+          = -5 \times \frac{3}{25} = -0.6 \]
+
+        $|E_{DP_3}| < 1$ nên chúng ta sẽ tăng P để tăng doanh thu
+
+        tại mức giá bẳng 5;
+        \[ E_{DP_5} = \frac{\%\Delta Q_D}{\%\Delta P} = -5 \times \frac{5}{40 - 5 * 5}
+          = -5 \times \frac{5}{15} = -1.6 \]
+
+        $|E_{DP_5}| > 1$ nên chúng ta sẽ giảm P để tăng doanh thu
+
+
+
+
+  \item Tổng doanh thu của công ty lớn nhất ở mức giá nào?
+
+        chúng ta cần tìm giá trị lớn nhất của $TR = Q * P = (40 - 5P) * P = 40P - 5P^2$
+
+        \begin{tikzpicture}
+          \draw [->] (0,0) -- (5,0)node[right] {$P$};
+          \draw [->] (0,0) -- (0,5)node[above] {$TR$};
+
+          \draw[scale = 0.05, domain=0:8, smooth, variable=\x, color=blue] plot ({\x}, {40 * \x -
+              5 * \x * \x});
+
+          \filldraw[scale = 0.05, color=red] (4, 80) circle (25pt) node[anchor=west]{MAX};
+        \end{tikzpicture}
+
+        ta có thể thấy đồ thị có điểm cực đại, và chúng ta cần tìm điểm cực đại đó
+        mọi người có thể xem lại sách giải tích lớp 12
+
+        đầu tiên tính đạo hàm TR' = 40 - 10P \\
+        TR' = 0 khi 10P = 40 hay P = 4 \\
+        tại đó $Q_D = 20$ vậy TR = 20 * 4 = 80
+
+
+
+\end{enumerate}
+
+\section{ Giả sử thu nhập hàng tháng của hộ gia đình giảm từ \$10.000 xuống còn \$6.000,
+  trong khi tiêu dùng hàng tháng về sản phẩm X của họ tăng từ 200 lên 400}
+
+\begin{enumerate}[a.]
+  \item Hãy tính hệ số co giãn của cầu theo thu nhập đối với hàng hóa X.
+
+        chúng ta nhắc lại công thức tính hệ số co giãn của cầu theo thu nhập
+
+        \[ E_{DI} =
+          \frac{\% \Delta Q_D}{\% \Delta I}
+          = \frac{\frac{\Delta Q_D}{Q_D} * 100 \% }{\frac{\Delta I}{I} * 100 \% }
+          = \frac{\Delta Q_D}{\Delta I} * \frac{I}{Q_D}
+        \]
+        trong đó
+
+        $\% \Delta Q_D$ là phần trăm thay đổi của lượng cầu
+
+        $\% \Delta I$ là phần trăm thay đổi của thu nhập
+
+        $ I = \frac{I_1 + I_2}{2}$
+
+        $ Q_D = \frac{Q_{D_1} + Q_{D_2}}{2}$
+
+
+        ta sẽ tính như sau
+
+        $ I = \frac{10.000 + 6.000}{2} = 8.000$
+
+        $ Q_D = \frac{200 + 400}{2} = 300$
+
+        $\Delta Q_D = 200 - 400 = -200$
+
+        $\Delta I = 10.000 - 6.000 = 4.000$
+
+        kết quả như sau
+
+        \[ E_{DI} = \frac{-200}{4000} * \frac{-8000}{300} = \frac{-4}{3}  \]
+
+
+  \item X là hàng hóa thông thường hay hàng hóa thứ cấp? Giải thích.
+
+        ta $E_{DI} = \frac{-4}{3}$ đó là 1 số âm nên nó có I và $Q_D$ vận động ngược chiều
+        nên nó là hàng hóa thứ cấp
+
+        định nghĩa về hàng hóa thứ cấp có trong đường dẫn sau
+        \url{https://dragonlend.vn/dragonlend-blog/phan-biet-hang-hoa-thong-thuong-va-hang-hoa-thu-cap/}
+
+\end{enumerate}
+
+\section{Hàm cầu của hàng hóa A theo thu nhập được biểu diễn như sau: $Q = 100I + 1000$ }
+
+\begin{enumerate}[a.]
+  \item Hàng A là hàng hóa thông thường hay thứ cấp?
+
+        để xác định xem A là hàng thông thường hay thứ cấp
+        chúng ta cần xác định xem $E_{DI}$ của nó là âm hay dương
+
+        ta có công thức tính $E_{DI}$ theo điểm như sau
+        \[ E_{DI} =
+          \frac{\% \Delta Q_D}{\% \Delta I}
+          = \frac{\frac{\Delta Q_D}{Q_D} * 100 \% }{\frac{\Delta I}{I} * 100 \% }
+          = Q_D' * \frac{I}{Q_D}
+        \]
+
+        chúng ta lưu ý rằng I và $Q_D$ thì luôn là số dương vì trong kinh tế người ta chắc hẳn không quan tâm đến giá âm và lượng hàng âm
+
+        vậy dấu của $E_{DI}$ phụ thuộc vào dấu của $Q_D'$
+
+        như đã nói ở bài trước $Q_D'$ là đạo hàm của $Q_D$ theo P
+        các bạn nào chưa nhớ ra đạo hàm là gì thì có thể giở sách giáo khoa toán giải tích lớp 11 để xem lại
+        \url{https://www.o-study.net/}
+
+        với phương trình đã cho $Q = 100I + 1000$ ta có $Q' = 100$
+        đó là 1 số dương, vậy theo định nghĩa trong slide tuần 4 trang 8, đây là hàng hóa thông thường
+
+
+  \item Tính $E_{DI}$ tại mức thu nhập là 10.
+
+        tại I = 10 ta có Q = 100 * 10 + 1000 = 2000
+
+        áp dụng công thức tính $E_{DI}$  tại điểm ta có
+
+        \[ E_{DI} =
+          Q_D' * \frac{I}{Q_D}
+          = 100 * \frac{10}{2000}
+          = 0.5
+        \]
+
+  \item  Khi thu nhập tăng từ 10 lên 20 thì hệ số co giãn của cầu theo thu nhập là bao nhiêu?
+
+        ở đây phải tính hệ số co giãn theo khoảng
+        và chúng ta có công thức sau
+
+        \[ E_{DI} =
+          \frac{\% \Delta Q_D}{\% \Delta I}
+          = \frac{\frac{\Delta Q_D}{Q_D} * 100 \% }{\frac{\Delta I}{I} * 100 \% }
+          = \frac{\Delta Q_D}{\Delta I} * \frac{I}{Q_D}
+        \]
+
+        $ I = \frac{10 + 20}{2} = 15$
+
+        $ Q_D = \frac{100 * 10 + 1000 + 100 * 20 + 1000}{2} = 3000$
+
+        $\Delta Q_D = 100 * 10 + 1000 - (100 * 20 + 1000) = -1000$
+
+        $\Delta I = 10 - 20 = -10$
+
+        kết quả như sau
+
+        \[ E_{DI} = \frac{-1000}{-10} * \frac{15}{3000} = 0.5  \]
+
+\end{enumerate}
+
+\section{ Lượng cầu về cam khi giá quýt thay đổi được cho ở biểu sau:}
+
+\begin{tabular}{|c|c|}
+  \hline
+  P quít (nghìn đồng / kg) & Q cam (tấn) \\
+  \hline
+  5                        & 20          \\
+  \hline
+  6                        & 23          \\
+  \hline
+  7                        & 25          \\
+  \hline
+  8                        & 28          \\
+  \hline
+  9                        & 30          \\
+  \hline
+\end{tabular}
+
+\begin{enumerate}[a.]
+  \item Tính hệ số co giãn chéo giữa cầu về cam và quýt khi giá quýt thay đổi từ 5 lên 6 nghìn
+        đồng/kg? từ 6 lên 8 nghìn đồng/kg.
+
+        chúng ta sử dụng công thức tính hệ số co giãn chéo trên khoảng
+
+        \[ E_{DC} = \frac{\% \Delta Q_{DX}}{\% \Delta P_{Y}}
+          =  \frac{ \Delta Q_{DX}}{\Delta P_{Y}} * \frac{P_{Y}}{Q_{DX}} \]
+
+        với
+
+        $P_{Y} = \frac{P_{Y_1} + P_{Y_2}}{2}$
+
+        $Q_{DX} = \frac{Q_{DX_1} + Q_{DX_2}}{2}$
+
+        từ 5 lên 6 nghìn
+        thay vào công thức tính như sau
+
+        $P_{Y} = \frac{5 +6 }{2}$
+
+        $Q_{DX} = \frac{20 + 23}{2}$
+
+        $\Delta Q_{DX} = 20 -23 = -3$
+
+        $\Delta P_{Y} = 5 -6 = -1$
+
+        \[ E_{DC} = \frac{ \Delta Q_{DX}}{\Delta P_{Y}} * \frac{P_{Y}}{Q_{DX}}
+          = \frac{-3}{-1} * \frac{11}{33} = 1 \]
+
+
+        từ 6 lên 8 nghìn
+        thay vào công thức tính như sau
+
+        $P_{Y} = \frac{6 + 8 }{2}$
+
+        $Q_{DX} = \frac{23 + 28}{2}$
+
+        $\Delta Q_{DX} = 23 -28 = -5$
+
+        $\Delta P_{Y} = 6 - 8 = -3$
+
+        \[ E_{DC} = \frac{ \Delta Q_{DX}}{\Delta P_{Y}} * \frac{P_{Y}}{Q_{DX}}
+          = \frac{-5}{-3} * \frac{14}{51} = \frac{70}{153} \]
+
+
+  \item Mối quan hệ giữa cam và quýt
+
+        ta thấy $E_{DC}$ dương do đó X và Y hoạt động cùng chiều và là hai mặt hàng thay thế
+\end{enumerate}
+
+\section{ Một công ty ước lượng được hàm cầu đối với sản phẩm của mình như sau:
+  $Q_X = 1000 - 0.6P_Y$ . Trong đó $Q_X$ là lượng cầu đối với hàng hóa X do công ty kinh doanh và $P_Y$ là giá của hàng hóa Y có liên quan với hàng hóa X}
+
+
+\begin{enumerate}[a.]
+  \item Xác định mối quan hệ giữa 2 hàng hóa X và Y?
+
+        ở đây đầu để bài chỉ cung cấp phương trình nên hệ số co giãn sẽ tính theo công thức
+        hệ số co giãn theo điểm
+
+        \[ E_{DC} = \frac{\% \Delta Q_{DX}}{\% \Delta P_{Y}}
+          =  \frac{ \Delta Q_{DX}}{\Delta P_{Y}} * \frac{P_{Y}}{Q_{DX}}
+          = Q_D' *  \frac{P_{Y}}{Q_{DX}} \]
+
+        như đã nói trong bài trước, giá trị của $E_{DC}$ âm hay dương đều phụ thuộc vào giá trị của $Q_D'$ là âm hay dương
+
+        $Q_D'$ là đạo hàm của $Q_{DX}$ theo $P_Y$  chi tiết cách tính đạo hàm , mọi người có thể tìm hiểu lại sách giáo khoa toán giải tích lớp 11 tại đường link sau \url{https://www.o-study.net/} hoặc xem lại 1 vài video trước video này, mình đã hướng dẫn chi tiết về đạo hàm dùng trong trường hợp bài toán kinh tế này
+
+        ta có $Q_D' = (1000 - 0.6P_Y)' = -0.6$
+
+        do đó $E_{DC}$ âm , vậy X và Y là hai hàng hóa bổ sung cho nhau theo trang 9 của slide tuần 4
+
+  \item Tính hệ số co giãn chéo của cầu hàng hóa X tại mức giá của hàng hóa Y là 40.
+
+        áp dụng công thức hệ số co giãn theo điểm
+
+        \[ E_{DC} = \frac{\% \Delta Q_{DX}}{\% \Delta P_{Y}}
+          =  \frac{ \Delta Q_{DX}}{\Delta P_{Y}} * \frac{P_{Y}}{Q_{DX}}
+          = Q_D' *  \frac{P_{Y}}{Q_{DX}} \]
+
+        ta có
+
+        \[ E_{DC} = Q_D' *  \frac{P_{Y}}{Q_{DX}}
+          = -0.6 *  \frac{40}{1000 - 0.6 * 40}
+          = -0.6 * \frac{40}{976} = -0.245 \]
+
+  \item Hãy xác định hệ số co giãn chéo của cầu hàng hóa X khi giá hàng hóa Y thay đổi
+        trong khoảng từ 80 đến 100
+
+        áp dụng công thức
+        \[ E_{DC} = \frac{\% \Delta Q_{DX}}{\% \Delta P_{Y}}
+          =  \frac{ \Delta Q_{DX}}{\Delta P_{Y}} * \frac{P_{Y}}{Q_{DX}} \]
+
+        với
+
+        $P_{Y} = \frac{P_{Y_1} + P_{Y_2}}{2}$
+
+        $Q_{DX} = \frac{Q_{DX_1} + Q_{DX_2}}{2}$
+
+        từ 5 lên 6 nghìn
+        thay vào công thức tính như sau
+
+        $P_{Y} = \frac{80 + 100 }{2}$
+
+        $Q_{DX} = \frac{1000 - 0.6 * 80 + 1000 - 0.6 * 100}{2}$
+
+        $\Delta Q_{DX} = 1000 - 0.6 * 80 - 1000 + 0.6 * 100 = 12$
+
+        $\Delta P_{Y} = 80 - 100 = -20$
+
+        \[ E_{DC} = \frac{ \Delta Q_{DX}}{\Delta P_{Y}} * \frac{P_{Y}}{Q_{DX}}
+          = \frac{-20}{12} * \frac{180}{1892} = \frac{-5}{3} * \frac{180}{1892} = -0.158\]
+
+
+\end{enumerate}
+
+\section{ Một người tiêu dùng, tháng nào cũng mua hai sản phẩm X và Y, thu nhập sẵn
+  có của ông ta thay đổi qua các tháng. Chúng ta có 6 quan sát những lượng sản phẩm
+  X được tiêu thụ trong khi giá của X, giá của Y và thu nhập sẵn có thay đổi như sau:}
+
+
+\begin{tabular}{|c|c|c|c|c|}
+  \hline
+  Quan sát & Lượng cầu X & Giá của X & Giá của Y & Thu nhập sẵn có \\
+  \hline
+  1        & 20          & 10        & 15        & 3200            \\
+  \hline
+  2        & 20          & 11        & 16        & 3200            \\
+  \hline
+  3        & 20          & 16        & 16        & 3300            \\
+  \hline
+  4        & 22          & 10        & 16        & 3200            \\
+  \hline
+  5        & 16          & 13        & 17        & 3300            \\
+  \hline
+  6        & 22          & 16        & 16        & 3400            \\
+  \hline
+\end{tabular}
+
+Tính hệ số co giãn của cầu theo giá., hệ số co giãn của cầu theo thu nhập, hệ số co giãn
+chéo của cầu hàng X theo giá hàng Y. Cho biết X là hàng gì? X và Y có mối quan hệ gì?
+
+\begin{enumerate}
+  \item Tính hệ số co giãn của cầu theo giá.,
+        \\
+        ta có công thức hệ số co giãn của cầu theo giá.
+        \[ E_{DP} = \frac{\%\Delta Q_D}{\%\Delta P} \]
+        với \\
+        $\%\Delta Q_D$: phần trăm thay đổi của lượng cầu \\
+        $\%\Delta P$: phần trăm thay đổi của giá \\
+
+        ở đây chúng ta không có phương trình đường cầu \\
+        nếu chúng ta xấp xỉ phương trình đường cầu theo phương pháp
+        La-grăng thì có lẽ bài toán vượt quá trình độ toán học của môn học này
+        vì nó là 1 phần của môn giải tich số, môn này không dạy cho khoa kinh tế trường
+        chúng ta \\
+        chúng ta lưu ý định nghia trong giáo trình slide 4 tuần 4 \\
+        \textbf{Phương pháp trung điểm: tính phần trăm thay đổi theo
+          cách chia mức thay đổi cho giá trị trung bình của điểm
+          đầu và điểm cuối}\\
+
+        chúng ta lấy điểm đầu là khảo sát số 1 và điểm cuối là khảo sát số 6
+        và áp dụng công thức
+        \[ E_{DP} = \frac{\%\Delta Q_D}{\%\Delta P} =
+          \frac{\frac{\Delta Q_D}{Q_D} \times 100 \% }{ \frac{\Delta P}{P} \times 100 \%  } =
+          \frac{\Delta Q_D}{\Delta P}  \times
+          \frac{\frac{P_1 + P_2}{2}}{\frac{Q_{D_1} + Q_{D_2}}{2}} \]
+        với
+
+        $\Delta Q_D = Q_1 - Q_6 = 20 - 22 = -2$
+
+        $\Delta P = P_1 - P_6 = 15 - 16 = -1$
+
+        $ P = \frac{15 + 16}{2} = 15.5$
+
+        $ Q_D = \frac{20 + 22}{2} = 21$
+
+        \[ E_{DP} = \frac{-2}{-1} * \frac{15.5}{24} = \frac{31}{21} = 1.476  \]
+
+
+  \item  hệ số co giãn của cầu theo thu nhập,
+
+        tương tự câu trên, chúng ta lấy điểm đầu là khảo sát 1 và điểm cuổi là khảo sát 6
+
+        chúng ta nhắc lại công thức tính hệ số co giãn của cầu theo thu nhập
+
+        \[ E_{DI} =
+          \frac{\% \Delta Q_D}{\% \Delta I}
+          = \frac{\frac{\Delta Q_D}{Q_D} * 100 \% }{\frac{\Delta I}{I} * 100 \% }
+          = \frac{\Delta Q_D}{\Delta I} * \frac{I}{Q_D}
+        \]
+        trong đó
+
+        $\% \Delta Q_D$ là phần trăm thay đổi của lượng cầu
+
+        $\% \Delta I$ là phần trăm thay đổi của thu nhập
+
+        $ I = \frac{I_1 + I_2}{2}$
+
+        $ Q_D = \frac{Q_{D_1} + Q_{D_2}}{2}$
+
+
+        ta sẽ tính như sau
+
+        $ I = \frac{3200 + 3400}{2} = 3300$
+
+        $ Q_D = \frac{20 + 22}{2} = 21$
+
+        $\Delta Q_D = 20 - 22 = -2$
+
+        $\Delta I = 3200 - 3400 = -200$
+
+        kết quả như sau
+
+        \[ E_{DI} = \frac{-2}{-200} * \frac{3300}{21} =  1.571 \]
+
+
+  \item hệ số co giãn chéo của cầu hàng X theo giá hàng Y.
+
+        tương tự câu trên, chúng ta lấy điểm đầu là khảo sát 1 và điểm cuổi là khảo sát 6
+
+        chúng ta sử dụng công thức tính hệ số co giãn chéo trên khoảng
+
+        \[ E_{DC} = \frac{\% \Delta Q_{DX}}{\% \Delta P_{Y}}
+          =  \frac{ \Delta Q_{DX}}{\Delta P_{Y}} * \frac{P_{Y}}{Q_{DX}} \]
+
+        với
+
+        $P_{Y} = \frac{P_{Y_1} + P_{Y_2}}{2}$
+
+        $Q_{DX} = \frac{Q_{DX_1} + Q_{DX_2}}{2}$
+
+        thay vào công thức tính như sau
+
+        $P_{Y} = \frac{15 + 16 }{2}$
+
+        $Q_{DX} = \frac{20 + 22}{2}$
+
+        $\Delta Q_{DX} = 20 -22 = -2$
+
+        $\Delta P_{Y} = 15 - 16 = -1$
+
+        \[ E_{DC} = \frac{ \Delta Q_{DX}}{\Delta P_{Y}} * \frac{P_{Y}}{Q_{DX}}
+          = \frac{-2}{-1} * \frac{31}{42} = \frac{31}{21} =  1.476 \]
+
+
+  \item Cho biết X là hàng gì? X và Y có mối quan hệ gì?
+
+        ta có $E_{DI} = 1.571$ là 1 số dương, do đó X là hàng thông thường theo slide 8 tuần 4 \\
+        ngoài ra X còn là hàng xa xỉ vì nó lớn hơn 1
+
+        ta có $E_{DC} = 1.476$ là 1 số dương do vậy X và Y là 2 loại hàng hóa thay thế theo slide 9 tuần 4 \\
+
+
+        \section{Phương trình đường cầu cà phê được cho bởi: $Q_X = 15 - 3P_X + 0,08I - 0,6P_Y$}
+
+        $Q_X$ là lượng cầu cà phê (nghìn tấn); PX là giá cà phê (\$/kg); I là thu nhập của người tiêu
+        dùng (nghìn \$/năm); PY là giá đường (\$/kg)
+
+        \begin{enumerate}[a.]
+          \item Giả sử rằng hiện nay I = 25, $P_Y$ = 5.  Tính hệ số co giãn của cầu cà phê theo giá cà phê
+                khi giá cà phê $P_X$ = 1 và khi giá cà phê tăng từ 1 lên 3 theo phương pháp trung điểm. \\ \\
+                viết lại phương trình  $Q_X = 15 - 3P_X + 0,08 * 25 - 0,6 * 5$ \\
+                $Q_X = 15 - 3P_X + 2 - 3 = 14 - 3P_X$
+
+                Tính hệ số co giãn của cầu tại mức giá bẳng 1;
+                ta áp dụng công thức
+                \[ E_{DP} = \frac{\%\Delta Q_D}{\%\Delta P} =
+                  \frac{\Delta Q_D}{\Delta P} \times \frac{P}{Q_D} = Q_D' \times \frac{P}{Q_D} \]
+
+                $Q_X' = ( 14 - 3P_X)' = -3$
+
+                \[ E_{DP} = \frac{\%\Delta Q_D}{\%\Delta P} = -3 \times \frac{1}{14 - 3 * 1}
+                  = -3 \times \frac{1}{15} = -0.2 \]
+
+                và khi giá tăng từ 1 lên 3 theo phương  pháp trung điểm.
+
+                \[ E_{DP} = \frac{\%\Delta Q_D}{\%\Delta P} =
+                  \frac{\Delta Q_D}{\Delta P}  \times
+                  \frac{\frac{P_1 + P_2}{2}}{\frac{Q_{D_1} + Q_{D_2}}{2}}
+                \]
+                nhắc lại phương trình cầu $Q_X = 14 - 3P_X$
+
+                $Q_1 = 14 - 3 * 1 = 11$
+
+                $Q_3 = 14 - 3 * 3 = 5$
+
+                $\Delta Q_D = Q_1 - Q_3 = 11 - 5 = 6$
+
+                $\Delta P = 1 - 3 = -2$
+
+                \[ E_{DP} = \frac{\%\Delta Q_D}{\%\Delta P} =
+                  \frac{6}{-2}  \times
+                  \frac{\frac{1 + 3}{2}}{\frac{11 + 5}{2}} =
+                  -3  \times
+                  \frac{4}{16} = \frac{-3}{4} = -0.75
+                \]
+
+          \item Giả sử rằng $P_X$ = 2, $P_Y$ = 5. Tính hệ số co giãn của cầu theo thu nhập khi thu nhập I =  50 và khi thu nhập tăng từ 50 lên 100.
+
+                viết lại phương trình  $Q_X = 15 - 3 * 2 + 0,08I - 0,6 * 5$ \\
+                $Q_X = 15 - 6 + 0.08I - 3 = 6 + 0.08I$
+
+                chúng ta nhắc lại công thức tính hệ số co giãn của cầu theo thu nhập từ 50 lên 100
+
+                \[ E_{DI} =
+                  \frac{\% \Delta Q_D}{\% \Delta I}
+                  = \frac{\frac{\Delta Q_D}{Q_D} * 100 \% }{\frac{\Delta I}{I} * 100 \% }
+                  = \frac{\Delta Q_D}{\Delta I} * \frac{I}{Q_D}
+                \]
+                trong đó
+
+                $\% \Delta Q_D$ là phần trăm thay đổi của lượng cầu
+
+                $\% \Delta I$ là phần trăm thay đổi của thu nhập
+
+                $ I = \frac{I_1 + I_2}{2}$
+
+                $ Q_D = \frac{Q_{D_1} + Q_{D_2}}{2}$
+
+
+                ta sẽ tính như sau
+
+                $ I = \frac{50 + 100}{2} = 75$
+
+                $ Q_D = \frac{6 + 0.08 * 50  + 6 + 0.08 * 100}{2} = 12$
+
+                $\Delta Q_D = 6 + 0.08 * 50  - 6 - 0.08 * 100 = -4$
+
+                $\Delta I = 50 - 100= -50$
+
+                kết quả như sau
+
+                \[ E_{DI} = \frac{-4}{-50} * \frac{75}{12} = \frac{2}{25} * \frac{25}{4} = 0.5  \]
+
+                ta có công thức tính $E_{DI}$ theo điểm như sau
+                \[ E_{DI} =
+                  \frac{\% \Delta Q_D}{\% \Delta I}
+                  = \frac{\frac{\Delta Q_D}{Q_D} * 100 \% }{\frac{\Delta I}{I} * 100 \% }
+                  = Q_D' * \frac{I}{Q_D}
+                \]
+
+                ta có $Q_X = 15 - 6 + 0.08I - 3 = 6 + 0.08I$
+
+                nên  $Q_X' = 0.08$
+
+                $ I = 50$
+
+                $ Q_D = 6 + 0.08 * 50 = 10$
+
+                \[ E_{DI} =
+                  Q_D' * \frac{I}{Q_D}
+                  = 0.08 * \frac{50}{10}
+                  = 0.4
+                \]
+
+
+          \item Giả sử rằng $P_X$ = 2, I = 25. Tính hệ số co giãn chéo của cầu cà phê theo giá đường khi
+                giá đường $P_Y$ = 6 và khi giá đường tăng từ 2 lên 6 theo phương pháp co giãn khoảng.
+
+                viết lại phương trình  $Q_X = 15 - 3P_X + 0,08I - 0,6P_Y$ \\
+                $Q_X = 15 - 6 + 2 - 0,6P_Y = 11 - 0,6P_Y$
+
+                chúng ta sử dụng công thức tính hệ số co giãn chéo trên khoảng
+
+                \[ E_{DC} = \frac{\% \Delta Q_{DX}}{\% \Delta P_{Y}}
+                  =  \frac{ \Delta Q_{DX}}{\Delta P_{Y}} * \frac{P_{Y}}{Q_{DX}} \]
+
+                với
+
+                $P_{Y} = \frac{P_{Y_1} + P_{Y_2}}{2}$
+
+                $Q_{DX} = \frac{Q_{DX_1} + Q_{DX_2}}{2}$
+
+                từ 2 lên 6
+                thay vào công thức tính như sau
+
+                $P_{Y} = \frac{2 +6 }{2}$
+
+                $Q_{DX} = \frac{11 - 0.6 * 2 + 11 - 0.6 * 6}{2}$
+
+                $\Delta Q_{DX} = 2 - 6 = -4$
+
+                $\Delta P_{Y} = 11 - 0.6 * 2 - 11 + 0.6 * 6 = 2.4$
+
+                \[ E_{DC} = \frac{ \Delta Q_{DX}}{\Delta P_{Y}} * \frac{P_{Y}}{Q_{DX}}
+                  = \frac{-4}{2.4} * \frac{8}{22 - 4.8} = 0.775 \]
+
+
+                áp dụng công thức hệ số co giãn theo điểm tại $P_Y$ = 6
+
+                \[ E_{DC} = \frac{\% \Delta Q_{DX}}{\% \Delta P_{Y}}
+                  =  \frac{ \Delta Q_{DX}}{\Delta P_{Y}} * \frac{P_{Y}}{Q_{DX}}
+                  = Q_D' *  \frac{P_{Y}}{Q_{DX}} \]
+
+                ta có
+
+                \[ E_{DC} = Q_D' *  \frac{P_{Y}}{Q_{DX}}
+                  = -0.6 *  \frac{6}{11 - 0.6 * 6}
+                  = -0.6 * \frac{6}{7.4} = -0.486 \]
+        \end{enumerate}
+
+
+\end{enumerate}
+
+\section{ Một công ty sản xuất thép có: hệ số co giãn của cầu về thép đối với giá thép}
+
+Một công ty sản xuất thép có: hệ số co giãn của cầu về thép đối với giá thép là -2, hệ
+số co giản của cầu về thép đối với thu nhập là 1,5; hệ số co giãn của cầu về thép theo giá của
+nhôm là 0,5. Lượng bán thép năm nay của công ty là 1000 tấn. Công ty dự báo trong năm tới
+giá của thép tăng 6\%, thu nhập của người tiêu dùng tăng 4\% và giá của nhôm giảm 4\%. Tổng
+ảnh hưởng của các yếu tố trên làm Lượng bán thép của công ty trong năm tới sẽ thay đổi
+như thế nào? Và Dự tính lượng bán thép của công ty trong năm tới là bao nhiêu?
+\\
+
+
+theo như đầu bài chúng ta có
+$E_{DP} = -2$,  $E_{DI} = 1.5$ $E_{DC} = 0.5$ $Q = 1000$ \\
+$\% \Delta P = 6$, $\% \Delta I = 4$, $\% \Delta P_Y = -4$
+\\
+$E_{DC} = 0.5$ lớn hơn 0 nên nhôm và thép là 2 hàng hóa thay thế \\
+$E_{DP} = -2$ nên độ lớn của trị tuyệt đối lớn hơn 1, nên lượng cầu co giãn theo giá \\
+$E_{DI} = 1.5$ lớn hơn 1 nên cầu co giãn theo thu nhập và thép là hàng hóa thông thường
+
+
+ta có các công thức
+
+\[ E_{DP} = \frac{\%\Delta Q_D}{\%\Delta P}\]
+
+năm mới $\%\Delta P = 6$ do vậy ta có $-2 = \frac{\%\Delta Q_D}{6}$ \\
+vậy $\%\Delta Q_D = -12$ do đó lượng cầu theo giá của năm mới sẽ là \\
+$Q_D = 1000 - 0.12 * 1000 = 880$
+
+\[ E_{DI} =
+  \frac{\% \Delta Q_D}{\% \Delta I} \]
+
+tương tự ta tính như sau \\
+năm mới $\%\Delta I = 4$ do vậy ta có $1.5 = \frac{\%\Delta Q_D}{4}$ \\
+vậy $\%\Delta Q_D = 6$ do đó lượng cầu theo thu nhập của năm mới sẽ là \\
+$Q_D = 1000 + 0.06 * 1000 = 1060$
+
+
+\[ E_{DC} = \frac{\% \Delta Q_{DX}}{\% \Delta P_{Y}}
+  =  \frac{ \Delta Q_{DX}}{\Delta P_{Y}} * \frac{P_{Y}}{Q_{DX}}
+  = Q_D' *  \frac{P_{Y}}{Q_{DX}} \]
+
+năm mới $\%\Delta P_{Y} = -4$ do vậy ta có $0.5 = \frac{\%\Delta Q_D}{-4}$ \\
+vậy $\%\Delta Q_D = -2$ do đó lượng cầu theo thu nhập của năm mới sẽ là \\
+$Q_D = 1000 - 0.02 * 1000 = 980$
+
+Tổng ánh hưởng sẽ là trung bình của cả 3 yếu tố:
+(880 + 1060 + 980) / 3 = 973
+
+do đó có thể thấy lượng thép bán ra sẽ bị giảm

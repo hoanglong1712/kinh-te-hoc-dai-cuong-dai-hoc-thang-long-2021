@@ -1,0 +1,52 @@
+\documentclass{report}
+\usepackage{listings}
+\usepackage[utf8]{vietnam}
+\usepackage{pgfplots}
+\usepackage[shortlabels]{enumitem}
+\usepackage{hyperref}
+
+\usetikzlibrary{arrows}
+\usepgfplotslibrary{polar}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc}
+
+\pgfplotsset{compat=1.17}
+
+
+
+\begin{document}
+
+\setcounter{chapter}{7}
+\chapter{TIẾT KIỆM, ĐẦU TƯ VÀ 
+HỆ THỐNG TÀI CHÍNH}
+
+\setcounter{section}{1}
+\section{Một nền kinh tế đóng có GDP là 1000 tỷ đồng}
+Một nền kinh tế đóng có GDP là 1000 tỷ đồng, thuế là 150 tỷ đồng, tiết kiệm tư 
+nhân là 250 tỷ đồng, tiết kiệm chính phủ là -30 tỷ đồng. Hãy tính tiêu dùng của hộ gia 
+đình, chi tiêu của chính phủ, tiết kiệm quốc dân và đầu tư.\\
+đầu tiên chúng ta ta lưu ý rằng đây là 1 nên kinh tế đóng \\
+và có công thức như sau\\
+$Y = C + I + G$ với $I = Y - C - G = S_n $ là tiết kiệm quốc dân\\
+và trong nền kinh tế đóng Tiết Kiệm = đầu tư\\
+Y: GDP. \\
+C: Chi cho tiêu dùng cá nhân của các hộ gia đình về hàng hóa và dịch vụ \\
+I: Đầu tư phán ánh tổng đầu tư trong nước của khu vực tư nhân \\
+G: chi tiêu cho các cấp chính quyền từ trung ương tới địa phương.\\
+T:  tổng số tiền thuế mà chính phủ thu được sau 
+khi trừ đi các khoản trợ cấp hoặc chuyển giao thu nhập \\
+Y - T - C: tiết kiệm tư nhân\\
+T - G: tiếp kiệm chính phủ\\
+Cán cân ngân sách (B) B = T - G
+
+chúng ta đang có T - G = -30, T = 150, Y - T - C = 250, Y = 1000\\
+vậy \\
+tiêu dùng của hộ gia đình = C = Y - T -250 = 1000 - 150 - 250 = 600\\
+chi tiêu của chính phủ = G = T + 30 = 150 + 30 = 180\\
+tiết kiệm quốc dân = đầu tư = Y - C - G = 1000 - 600  - 180 = 280
+
+
+
+
+
+\end{document}

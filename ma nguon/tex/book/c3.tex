@@ -1,0 +1,668 @@
+\chapter{CÁC LỰC LƯỢNG 
+CUNG CẦU TRÊN THỊ 
+TRƯỜNG}
+
+\section{Điều gì xảy ra với giá và lượng cân bằng trên thị trường máy lạnh trong các
+  tình huống sau:}
+
+\begin{enumerate}[(a)]
+    \item Thời tiết trở lên nóng bất thường, người bán không thay đổi lượng bán ra.
+    \item  Lượng máy lạnh nhập khẩu gia tăng
+    \item  Giá điện tăng cao, người bán không thay đổi lượng bán ra.
+    \item  Các nhà khoa học khuyến cáo, máy lạnh có hại cho sức khỏe.
+    \item  Thu nhập của người tiêu dùng giảm mạnh do suy thoái kinh tế.
+    \item  Nhiều doanh nghiệp rời bỏ thị trường do chính phủ tăng thuế.
+    \item  a và b xảy ra đồng thời nhưng ảnh hưởng của a mạnh hơn.
+    \item  e và f xảy ra đồng thời
+\end{enumerate}
+
+\section{Cung – cầu về sản phẩm Y có dạng: $Q_S = 2P - 8$ và $Q_D = 15 - 0.5P$
+  (trong đó Q tính bằng triệu tấn, P tính bằng nghìn đồng/tấn)}
+
+\begin{enumerate}[(a)]
+    \item Xác định giá và sản lượng cân bằng của sản phẩm Y.
+    \\
+    $Q_S = Q_D$
+    \\ 
+    $2P - 8 = 15 - 0.5P$
+    \\
+    $2.5P = 15 + 8 $
+    \\
+    $2.5P = 23$
+    \\ 
+    $P = 9.2$
+    \\
+    $Q_S = Q_D = 10.4$
+
+    \begin{tikzpicture}
+        \draw [->] (0,0) -- (5,0)node[right] {$Q$};
+        \draw [->] (0,0) -- (0,5)node[above] {$P$};
+        \draw[scale = 0.1, domain=0:20, smooth, variable=\x, color=blue] plot ({\x}, {\x /2 + 4});
+        \draw[scale = 0.1, domain=0:20, smooth, variable=\x, color=red] plot ({\x}, {30 - 2 * \x});
+        \filldraw[scale = 0.1, color=purple] (10.4, 9.2) circle (5pt) node[anchor=west]{A (10.4, 9.2)};
+    \end{tikzpicture}
+
+    \item Vì một lý do nào đó lượng cầu giảm 1 triệu tấn ở mọi mức giá, khi đó giá và lượng thay
+          đổi như thế nào. Vẽ đồ thị minh họa câu a và câu b trên cùng một đồ thị
+    \\ giá giảm , lượng cũng giảm
+    \\
+    cũ $Q_D = 15 - 0.5P$ 
+    \\
+    mới $Q_D = 14 - 0.5P$
+    \\
+    \begin{tikzpicture}
+        \draw [->] (0,0) -- (5,0)node[right] {$Q$};
+        \draw [->] (0,0) -- (0,5)node[above] {$P$};
+
+        \draw[scale = 0.2, domain=0:20, smooth, variable=\x, color=green] plot ({\x}, {28 - 2 * \x});
+
+        \draw[scale = 0.2, domain=0:20, smooth, variable=\x, color=blue] plot ({\x}, {\x /2 + 4});
+        \draw[scale = 0.2, domain=0:20, smooth, variable=\x, color=red] plot ({\x}, {30 - 2 * \x});
+        \filldraw[scale = 0.2, color=purple] (10.4, 9.2) circle (5pt) node[anchor=west]{A};
+    \end{tikzpicture}
+    
+    \item Do giá nguyên liệu sản xuất sản phẩm Y giảm nên lượng cung tăng 10 \% tại mọi mức giá. Xác định giá và lượng cân bằng mới. Vẽ đồ thị minh họa câu a và câu c trên cùng  một đồ thị
+    \\
+    phương trình cũ :
+    $Q_S = 2P - 8$ 
+
+    trước đấy với số tiền 2P - 8
+    chúng ta mua được $Q_S$
+    do cung tăng 10 \% với mọi mức gía
+    ý ở ở đây là P giữ nguyên
+    \\
+    thì ta sẽ mua được như sau:
+    2P - 8  + 0.1 * (2P - 8)
+
+    $Q_S = (2P - 8) + 0.1 * (2P - 8)$
+
+    $Q_S = 2.2P - 8.8$
+   
+    ta tìm điểm cân băng mới
+
+    $2.2P - 8.8 = 15 - 0.5P$
+
+    $ 2.7P = 15 + 8.8 = 23.8 $
+
+    $ P_{cb} = 8.81$
+
+    $Q_{cb} = 15 - 0.5 * 8.81 =  10.59$
+    
+    $Q_S = 2.2P - 8.8$
+
+    $2.2 P = Q_S + 8.8$
+
+    $P = Q_S / 2.2 + 4$
+
+
+
+    \begin{tikzpicture}
+        \draw [->] (-3,0) -- (5,0)node[right] {$Q$};
+        \draw [->] (0,0) -- (0,5)node[above] {$P$};
+        \draw[scale = 0.2, domain=-10:20, smooth, variable=\x, color=green] plot ({\x}, {  \x / 2.2 + 4});
+        
+        \draw[scale = 0.2, domain=-10:20, smooth, variable=\x, color=blue] plot ({\x}, { 0.5 * \x  + 4});
+
+        \filldraw[scale = 0.2, color=purple] (10.59, 8.81) circle (5pt) node[anchor=west]{A};
+        
+        \draw[scale = 0.2, domain=0:20, smooth, variable=\x, color=red] plot ({\x}, {30 - 2 * \x});
+
+       
+    \end{tikzpicture}
+
+    \item Khi giá bán trên thị trường là 8 nghìn đồng/tấn thì thị trường xảy ra tình trạng gì? doanh
+          thu thu được tại mức giá này là bao nhiêu?
+
+        thiếu hụt hàng hóa 
+        doanh thu tính như sau $Q_D = 15 - 0.5P$ $Q_D = 15 - 0.5 * 8$ $Q_D = 11$
+
+        doanh thu bằng Q * P = 11 * 8 = 88
+
+        \begin{tikzpicture}
+            \draw [->] (0,0) -- (5,0)node[right] {$Q$};
+            \draw [->] (0,0) -- (0,5)node[above] {$P$};
+            \draw[scale = 0.2, domain=0:20, smooth, variable=\x, color=blue] plot ({\x}, {\x /2 + 4});
+            \draw[scale = 0.2, domain=0:20, smooth, variable=\x, color=red] plot ({\x}, {30 - 2 * \x});
+            \filldraw[scale = 0.2, color=purple] (10.4, 9.2) circle (5pt) node[anchor=west]{A};
+
+            \draw[scale = 0.2, domain=0:20, smooth, variable=\x, color=green] (8,8) -- (11, 8);
+            
+            \filldraw[scale = 0.2] (8,8) circle (5pt) node[anchor=north]{B};
+        \end{tikzpicture}
+    \item Khi giá bán trên thị trường là 11 nghìn đồng/tấn thì thị trường xảy ra hiện tượng dư cung
+          hay dư cầu? Tính mức dư cung hoặc dư cầu? Tính doanh thu thu được tại mức giá này là
+          bao nhiêu?
+
+          dư thừa hàng hóa
+
+          doanh thu tính như sau $Q_S = 2P - 8$ $Q_S = 2 * 11 - 8$ $Q_S = 14$
+
+           doanh thu bằng Q * P = 11 * 14 = 154
+           
+          \begin{tikzpicture}
+            \draw [->] (0,0) -- (5,0)node[right] {$Q$};
+            \draw [->] (0,0) -- (0,5)node[above] {$P$};
+            \draw[scale = 0.2, domain=0:20, smooth, variable=\x, color=blue] plot ({\x}, {\x /2 + 4});
+            \draw[scale = 0.2, domain=0:20, smooth, variable=\x, color=red] plot ({\x}, {30 - 2 * \x});
+            \filldraw[scale = 0.2, color=purple] (10.4, 9.2) circle (5pt) node[anchor=west]{A};
+
+            \draw[scale = 0.2, domain=0:20, smooth, variable=\x, color=green] (14,11) -- (9.5, 11);
+
+            \filldraw[scale = 0.2] (9.5, 11) circle (5pt) node[anchor=east]{B};
+
+        \end{tikzpicture}
+\end{enumerate}
+
+
+
+\section{ Cho số liệu về cung – cầu sản phẩm A như sau:}
+\begin{tabular}{|c|c|c|}
+    Giá (100đ/ 1kg) & Lượng cầu (kg) & Lượng cung(kg) \\
+    \hline
+    7               & 20             & 11             \\
+    \hline
+    8               & 19             & 13             \\
+    \hline
+    9               & 18             & 15             \\
+    \hline
+\end{tabular}
+
+
+\begin{enumerate}[(a)]
+    \item Viết phương trình đường cung, đường cầu, xác định giá và lượng cân bằng. Doanh thu
+          tại trạng thái cân bằng.
+          \\
+          chúng ta nhắc lại về phương pháp tính phương trình đường thẳng trong hệ tọa độ Đề Các
+
+          phương trình đường thẳng
+          đi qua 2 điểm trong hệ tọa độ Đề Các
+
+          ta có trục Ox và trục Oy
+
+          $A * (x - x_0) + B * (y - y_0) = 0$
+
+          ta đã có $x_0$ và $y_0$
+          vi dụ $x_0 = 20$ và $y_0 = 7$
+
+          ta cần tìm A và B
+          chúng ta nhơ lại rằng (A, B) là véc tơ pháp tuyến  của đương thẳng đi qua 2 điểm cho trước
+
+          muốn tìm  vec tơ pháp tuyến ta cần tìm véc tơ chỉ phương
+
+          vec tơ chỉ phương sẽ tính như sau
+
+          giả sử chúng tâ có 2 điểm
+          $M(20, 7)$ $N(19, 8)$
+
+          véc tơ MN = (19 - 20, 8 - 7) = (-1, 1)
+
+          vậy ta đã có véc tơ chỉ phương
+
+          vec tơ pháp tuyến tính như sau
+
+          công thức
+          chỉ phương = (C, D)
+          pháp tuyến = (-D, C)
+
+          MN =  (-1, 1)
+          $\Rightarrow$ pháp tuyến = (-1, -1)
+
+          phương trình đường cầu
+
+          $A * (x - x_0) + B * (y - y_0) = 0$
+
+          (A, B) = (-1-, -1)
+
+          $x_0 = 20$ $y_0= 7$
+
+          $-1 * (x - 20) + (-1) * (y - 7) = 0$
+
+          $-x + 20 - y + 7 = 0$
+
+          $-x - y + 27 = 0$
+
+          $x = 27 - y$
+
+          $Q_D = 27 - P$
+
+          đường cung
+          MN = (13 - 11, 8 - 7) = (2, 1)
+          pháp tuyến = (-1, 2)
+
+          phương trình đường cung
+
+          $-1 * (x - 11) + (2) * (y - 7) = 0$
+
+          $-x + 11 + 2y - 7 = 0$
+
+          $-x + 2y + 4 = 0$
+
+          $4 + 2y = x$
+
+          $Q_S = 4 + 2P$
+
+
+
+          kết luận
+          ta có
+
+          $Q_S = 2P + 4$,
+          $Q_D = 27 - P$
+
+          $P = Q_S / 2 - 2$ $y = x / 2 - 2$
+
+          $P = 27 - Q_D$
+
+          tính điểm giao của 2 đường thăng - điểm cân bằng
+
+          $Q_S = Q_D$
+
+          $2P + 4 = 27 - P$
+
+          $3P = 23 \rightarrow P = 7.6, Q = 19.4$
+
+          Doanh thu tại trạng thái cân bằng.:
+          P * Q = 7.6 * 19.4
+
+          \begin{tikzpicture}
+              \draw [->] (0,0) -- (5,0)node[right] {$Q$};
+              \draw [->] (0,0) -- (0,5)node[above] {$P$};
+              \draw[scale = 0.1, domain=0:30, smooth, variable=\x, color=blue] plot ({\x}, {\x /2 - 2});
+              \draw[scale = 0.1, domain=0:30, smooth, variable=\x, color=red] plot ({\x}, {27 - \x});
+              \filldraw[scale = 0.1, color=purple] (19.4, 7.6) circle (5pt) node[anchor=west]{A};
+          \end{tikzpicture}
+
+
+    \item Vì lý do nào đó, lượng cung sản phẩm A tăng lên một lượng là 6 kg ở mỗi mức giá. Hãy
+          xác định mức giá và sản lượng, tổng doanh thu tại trạng thái cân bằng mới?.
+
+          cũ
+          $Q_S = 2P + 4$,
+          $Q_D = 27 - P$
+
+          mới
+          $Q_S = (2P + 4) + 6$,
+          $Q_D = 27 - P$
+
+          $ \Rightarrow Q_S = 2P + 10$,
+          $Q_D = 27 - P$
+
+          $Q_S = Q_D$
+
+          $2P + 10 = 27 - P$
+
+          $3P = 17 \rightarrow P = 6.3, Q = 21.7 \rightarrow$ tổng doanh thu là 6.3 * 21.7
+
+    \item Giả sử Chính phủ áp đặt giá bán trên thị trường là 11 nghìn đồng/kg và hứa mua hết phần
+          sản phẩm thừa, thì số tiền chính phủ phải chi ra là bao nhiêu?
+
+    đường thẳng song song với trục hoành
+    y = 11 là đường giá cố định của chính phủ
+
+    ta cần tính giáo của đường cung với đường áp giá để tìm ra lượng hàng cần tiêu thụ
+
+    $Q_S = 2P + 4$,
+    thay P  = 11 vào ta có 
+
+    $Q_S = 2 * 11 + 4 = 26$,
+
+    $Q_D = 27 - P$
+    thay P  = 11 vào ta có 
+
+    $Q_D = 27 - 11 = 16$
+
+    lượng Dư thừa = $Q_S - Q_D = 26 - 16 = 10$
+
+    vậy chính phủ cần mua 10 kg
+    , số tiền bỏ ra là 10 * 11 = 110 
+
+          \begin{tikzpicture}
+            \draw [->] (0,0) -- (5,0)node[right] {$Q$};
+            \draw [->] (0,0) -- (0,5)node[above] {$P$};
+            \draw[scale = 0.1, domain=0:30, smooth, variable=\x, color=blue] plot ({\x}, {\x /2 - 2});
+            \draw[scale = 0.1, domain=0:30, smooth, variable=\x, color=red] plot ({\x}, {27 - \x});
+            \filldraw[scale = 0.1, color=purple] (19.4, 7.6) circle (5pt) node[anchor=west]{A};
+
+            \draw[scale = 0.1, domain=0:30, smooth, variable=\y, color=green] plot ({\y}, {11});
+
+            \filldraw[scale = 0.1, color=purple] (26, 11) circle (5pt) node[anchor=south]{S};
+
+            \filldraw[scale = 0.1, color=purple] (16, 11) circle (5pt) node[anchor=south]{D};
+        \end{tikzpicture}
+\end{enumerate}
+
+
+\section{ Cho thị trường hàng hóa A có phương trình đường cung và đường cầu như 
+sau: $P_S = 0,2Q - 10$ và $P_D = 20 - 0.2Q$ (bỏ qua đơn vị của giá và lượng)}
+
+\begin{enumerate}[a.]
+    \item Xác định Giá và sản lượng cân bằng của thị trường?
+    \\
+    $P_S = 0,2Q - 10$ và $P_D = 20 - 0.2Q$
+
+    $0,2Q - 10 = 20 - 0.2Q$
+
+    $0.4Q = 30$
+
+    $Q = 75$
+
+    $P = 20 - 0.2 * 75 = 5$
+
+    \item Giả sử giá bán trên thị trường là P = 10 thì thị trường xảy ra tình trạng gì? Doanh 
+    thu thu được tại mức giá này bằng bao nhiêu?
+   
+
+    \begin{tikzpicture}
+        \draw [->] (0,0) -- (8,0)node[right] {$Q$};
+        \draw [->] (0,0) -- (0,3)node[above] {$P$};
+        \draw[scale = 0.07, domain=0:120, smooth, variable=\x, color=blue] plot ({\x}, {\x /5 - 10});
+        \draw[scale = 0.07, domain=0:80, smooth, variable=\x, color=red] plot ({\x}, {20 - 0.2 * \x});
+        \filldraw[scale = 0.07, color=black] (75, 5) circle (5pt) node[anchor=south]{CB};
+
+        \draw[scale = 0.07, domain=0:120, smooth, variable=\y, color=green] plot ({\y}, {10});
+
+        \filldraw[scale = 0.07, color=black] (50, 10) circle (5pt) node[anchor=south]{Z};
+
+    \end{tikzpicture}
+
+    $P = 10  > P_{CB}= 5$
+     
+    nên  cầu giảm , cung dư, tức là dư thừa hàng hóa
+
+    $P_D = 20 - 0.2Q \Rightarrow P_D - 20 = -0.2 Q $
+
+    $P_D = 10$
+
+    $10 - 20 = -0.2Q  \Rightarrow Q = 50$
+
+    Doanh thu = P * Q = 10 * 50 = 500
+
+    \item Do nhiều hàng hóa thay thế cho hàng hóa A xuất hiện nên lượng cầu về hàng hóa A 
+    giảm 20\% tại mọi mức giá. Hãy tính tác động của của việc giảm cầu này đối với giá ?
+
+    \begin{tikzpicture}
+        \draw [->] (0,0) -- (8,0)node[right] {$Q$};
+        \draw [->] (0,0) -- (0,3)node[above] {$P$};
+        \draw[scale = 0.07, domain=0:120, smooth, variable=\x, color=blue] plot ({\x}, {\x /5 - 10});
+        \draw[scale = 0.07, domain=0:80, smooth, variable=\x, color=red] plot ({\x}, {20 - 0.2 * \x});
+        \filldraw[scale = 0.07, color=black] (75, 5) circle (5pt) node[anchor=south]{CB};
+        
+        \draw[scale = 0.07, domain=0:80, smooth, variable=\x, color=green] plot ({\x}, { 10 - \x / 4 });
+
+    \end{tikzpicture}
+
+    $P_D = 20 - 0.2Q$
+
+    $ -P_D  + 10 = 0.2Q$
+
+    cũ $Q = 50 - 5P_D$
+
+    mới $Q_D = 0.8 * (50 - 5P_D) \Rightarrow Q_D = 40 - 4P_D$
+
+    $P_D = 10 - 0.25Q_D$
+
+    ta tìm điểm cân bằng mới 
+
+    $P_S = 0,2Q - 10 = 10 - 0.25Q$
+
+    $0.45Q = 20 \Rightarrow Q = 44.4$
+
+    $P = 0,2Q - 10 = -1.12$
+
+    từ đây ta có thể thấy là giá thành của sản phẩm A rơi xuống dưới 0, và nhà sản xuất phải đưa thêm tiền cho khách hầng để bán sản phẩm , ở mức cân bằng cảu thị trường việc đó đã từng xảy ra với giá dầu khi dịch covid xảy ra vào năm ngoái 
+
+    \item  Do giá hàng B là hàng thay thế cho A giảm nên lượng cầu về A giảm một lượng 
+    tuyệt đối tại mọi mức giá. Biết lượng cân bằng mới bây giờ là 60. Lập phương trình 
+    đường cầu mới?
+
+    từ lượng cân bằng là Q = 60 và $P_S = 0,2Q - 10$ là cố định
+     ta chỉ ra P = 0.2 * 60 - 10 = 2
+
+     lưu ý rằng lượng cầu giảm tuyệt đối với mọi mức Giá
+     tức là đường cầu mới sẽ song song với đường cầu cũ 
+
+     chúng ta có thể giải thích việc này qua phương trình 
+
+     $y = ax + b$ khi b thay đổi thì đường thẳng mới song song với đường thẳng cũ đó là ý của chữ giảm "tăng"  tuyệt đối với mọi mức Giá
+
+     vậy công việc là viết phương trình đường mới với hệ số cũ 
+     và đi qua điểm cân bằng mới 
+
+     cụ thể phương trình cũ là 
+     $P_D = 20 - 0.2Q$ viết lại là 
+     $P_D + 0.2Q - 20 = 0$, 
+     tá có vec tơ pháp tuyến ở đây là (0.2, 1)
+     phương trình này đi qua  điểm (60, 2)
+
+     phương trình mới sẽ là 
+     $0.2 (x - 60) + 1 (y - 2) = 0$
+
+     $0.2x - 12 + y - 2 = 0 $
+
+     $0.2x + y - 14 = 0$
+
+     $P_D = 14 - 0.2 Q$
+
+     \begin{tikzpicture}
+        \draw [->] (0,0) -- (8,0)node[right] {$Q$};
+        \draw [->] (0,0) -- (0,3)node[above] {$P$};
+        \draw[scale = 0.07, domain=0:120, smooth, variable=\x, color=blue] plot ({\x}, {\x /5 - 10});
+        \draw[scale = 0.07, domain=0:80, smooth, variable=\x, color=red] plot ({\x}, {20 - 0.2 * \x});
+        \filldraw[scale = 0.07, color=black] (75, 5) circle (5pt) node[anchor=south]{CB};
+        
+        \draw[scale = 0.07, domain=0:80, smooth, variable=\x, color=green] plot ({\x}, { 14 - \x / 5 });
+
+        
+    \end{tikzpicture}
+\end{enumerate}
+
+\section{  Hàm cầu về sản phẩm X trên thị trường được cho bởi phương trình: $P = 100 - 0,05Q_D$; trong đó Q là sản lượng tính bằng đơn vị, P tính bằng \$. Cung sản phẩm X 
+luôn cố định ở mức 1100 đơn vị.}
+
+\begin{enumerate}[a.]
+    \item Tính giá và sản lượng cân bằng của sản phẩm X.
+    
+    phương trình đường cung có dạng
+    x = b tức là song song với trục tung P
+
+    $Q_S = 1100$
+
+    $P = 100 - 0,05Q_D$
+
+    $0.05Q_D = 100 - P$
+
+    viết lại phương trình đường cầu
+    $Q_D = 2000 - 20P$
+
+    tại điểm cân bằng 
+
+    $Q_D = Q_S$
+
+    $1100 = 2000 - 20P$
+
+    $20P = 2000 - 1100 = 900$
+
+    $P = 45$
+
+    vậy điểm cân bằng là 
+    (1100, 45)
+    Q = 1100, P = 45
+
+    \begin{tikzpicture}
+        \draw [->] (0,0) -- (15,0)node[right] {$Q$};
+        \draw [->] (0,0) -- (0,5)node[above] {$P$};             
+        \draw[scale = 0.08, domain=0:150, smooth, variable=\x, color=red] plot ({\x}, {10 - 0.05 * \x});
+        \draw [-, color=blue, scale = 0.08] (110,0) -- (110,80);             
+        \filldraw[scale = 0.08, color=black] (110, 4.5) circle (5pt) node[anchor=west]{CB};
+    \end{tikzpicture}
+    
+
+    \item  Giả sử nhờ quảng cáo, lượng cầu tại mỗi mức giá tăng thêm 15\%. Giá và sản lượng 
+    cân bằng mới trên thị trường là bao nhiêu. Vẽ hình minh họa?
+
+    phương trình đường cầu
+    $Q_D = 2000 - 20P$
+
+    tại mỗi mức giá chúng ta tăng 15\%
+
+    $Q_D = (2000 - 20P) + 0.15( 2000 - 20P)$
+
+    $Q_D = 1.15(2000 - 20P)$
+
+    $Q_D = 2300 - 23P$
+
+    để tìm giá và sản lượng cân bằng mới 
+    ta lưu ý rằng lượng cung không đổi và là 1100
+    $\Rightarrow$ ta cần tính P
+
+    $1100 = 2300 - 23P$
+
+    $23P = 2300 - 1100 = 1200$
+
+    $P = 52.17$
+
+    điểm cân bằng mới 
+    Q = 1100, P = 52.17
+
+    
+    $Q_D = 2300 - 23P$
+
+    $P = 100 - Q_D / 23 $
+
+    \begin{tikzpicture}
+        \draw [->] (0,0) -- (15,0)node[right] {$Q$};
+        \draw [->] (0,0) -- (0,5)node[above] {$P$};             
+        \draw[scale = 0.08, domain=0:150, smooth, variable=\x, color=red] plot ({\x}, {10 - 0.05 * \x});
+        \draw [-, color=blue, scale = 0.08] (110,0) -- (110,80);         
+        
+        \draw[scale = 0.08, domain=0:150, smooth, variable=\x, color=green] plot ({\x}, {10 - \x / 23});
+        
+        \filldraw[scale = 0.08, color=black] (110, 5.217) circle (8pt) node[anchor=west]{CB};
+    \end{tikzpicture}
+
+    \item  Khi chính phủ áp đặt giá bán trên thị trường là 50 thì doanh thu là bao nhiêu?
+    
+    P = 50
+    lưu ý rằng P cân bằng là 45 mà lượng cung không thay đổi
+    đây gọi là áp giá sàn
+
+    tại điểm P = 50 thì cầu thị trường là $Q_D = 2000 - 20P$
+
+    $Q_D = 2000 - 20 * 50 = 2000  - 1000 = 1000$
+
+
+
+    do đó doanh thu 50 * 1000 = 50000
+     vì nhà nước không cam kết thu mua sản phẩm thừa 
+
+    \begin{tikzpicture}
+        \draw [->] (0,0) -- (15,0)node[right] {$Q$};
+        \draw [->] (0,0) -- (0,5)node[above] {$P$};             
+        \draw[scale = 0.08, domain=0:150, smooth, variable=\x, color=red] plot ({\x}, {10 - 0.05 * \x});
+
+        \draw[scale = 0.08, domain=0:150, smooth, variable=\y, color=green] plot ({\y}, {5});
+
+        \draw [-, color=blue, scale = 0.08] (110,0) -- (110,80);             
+       
+        \filldraw[scale = 0.08, color=black] (110, 4.5) circle (5pt) node[anchor=west]{MUA};
+
+
+    \end{tikzpicture}
+    
+\end{enumerate}
+
+\section{Bài 6. Xác định hàm cung và hàm cầu trong các trường hợp sau:}
+
+\begin{enumerate}[a.]
+    \item Trong một thị trường có 200 người bán và 100 người mua. Những người bán có hàm 
+    cung giống nhau là $P = 0,5q + 100$ và những người mua có hàm cầu giống nhau là
+    $q = 2250 - 6P$ (trong đó q là nghìn sản phẩm, p là nghìn đồng/sp). Xác định hàm cung, 
+    hàm cầu của thị trường.
+
+    chúng ta lưu ý một số định nghĩa sau :
+    \begin{itemize}
+        \item Cung thị trường bằng tổng cung cá nhân theo chiều ngang. 
+        \[ Q_S = \sum_{j=1}^n q_{s_j} \]
+        \item Cầu thị trường bằng tổng 
+        cầu cá nhân theo chiều  ngang
+        \[ Q_D = \sum_{i=1}^n q_{d_i} \]
+    \end{itemize}
+
+    ta biến đổi các phương trình dạng giá thành các phương trình dạng lượng 
+
+    $P = 0,5q + 100 \Rightarrow 0.5q = P - 100 \Rightarrow q = 2P - 200$
+
+    $q = 2250 - 6P$ phương trình không cần biến đổi
+
+    ta có 200 người bán vậy phương trình cung thị trường sẽ là như sau
+
+    $Q_S = 200 * q = 200 * (2P - 200) = 400P - 40000$
+
+    ta có 100 người mua vậy phương trình cầu như sau
+
+    $Q_D = 100 * q = 100 * (2250 - 6P) = 225000 - 600P$
+    
+    \item  Thị trường sản phẩm A có 3 nhóm người tiêu dùng có phương trình đường cầu lần lượt là 
+    $P = 20 - 0,001q_A$ ; $q_B = 40.000 - 2.000P$ và $P = 20 - 0,0002q_C$. Và trong thị trường này có 
+    250 người bán, mỗi người bán đều có hàm cung giống nhau là $P = 0,1q - 13,6$. Hãy xác định 
+    hàm cầu và hàm cung của thị trường sản phẩm A. Xác định giá và lượng cân bằng của thị 
+    trường.
+
+    chúng ta biến đổi về phương trình lượng cầu
+
+    $P = 20 - 0,001q_A \Rightarrow 0,001q_A = 20 - P \Rightarrow q_A = 20000 - 1000P$ 
+    
+    $q_B = 40000 - 2000P$ 
+    
+    $P = 20 - 0,0002q_C \Rightarrow 0,0002q_C = 20 - P \Rightarrow q_C = 10000 - 5000P$
+
+    vậy phuơng trình đường cầu thị trường là tổng của tất cả các cầu
+
+    $Q_D = 20000 - 1000P + 40000 - 2000P +  10000 - 5000P = 70000 - 8000P$
+
+    biến đổi  $P = 0,1q - 13,6$ về phương trình cung 
+
+    $P = 0,1q - 13,6 \Rightarrow  0,1q = P + 13,6 \Rightarrow q = 10P + 136$
+
+    phương trình tổng cung là 
+    $Q_S = 250 * ( 10P + 136) = 2500P + 34000$
+
+
+    điểm cân bằng 
+    $Q_D = Q_S$
+
+    $70000 - 8000P = 2500P + 34000 \Rightarrow 10500P = 36000 \Rightarrow P = 3.42$
+
+    $Q = 2500 * 3.42 + 34000 = 8550 + 34000 = 42550$
+    \item  Thị trường của sản phẩm X được mô tả ở đồ thị sau đây:
+    Hãy viết phương trình biểu diễn cung, cầu của sản phẩm X
+
+    đường cầu màu xanh lá đi qua điểm (0, 20) và (500, 10)
+    ta có vectơ chỉ phương (0 - 500, 20 - 10) = (-500, 10)
+    và vectơ pháp tuyến là (-10, -500)
+    phương trình sẽ như sau: 
+    
+    $-10 * (Q_D - 0) + (-500) * (P - 20) = 0$
+
+    $-10Q_D - 500P + 10000 = 0$
+
+    $500P = -10Q_D + 10000$
+
+    $P = 20  -Q_D / 50$
+
+    tương tự với phương trình đường cung đi qua điểm (0, 5)  và (500, 10)
+    ta có vectơ chỉ phương (0 - 500, 5 - 10) = (-500, -5)
+    và vectơ pháp tuyến là (5, -500)
+    phương trình sẽ như sau: 
+    
+    $5* (Q_S - 0) + (-500) * (P - 5) = 0$
+
+    $5Q_S - 500P + 500 = 0$
+
+    $500P = 5Q_S + 500$
+
+    $P = Q_S / 100 + 1$
+
+\end{enumerate}
+
+

@@ -1,0 +1,132 @@
+\chapter{LẠM PHÁT VÀ
+  THẤT NGHIỆP}
+
+  \section{ Một nền kinh tế chỉ sản xuất 2 loại hàng tiêu dùng là lương thực và quần áo có
+  số liệu như sau: (năm 2008 là năm gốc)}
+
+\begin{tabular}{|c|c|c|c|c|}
+  \hline
+  Năm  & Giá lương & Lượng      & Giá quần & Lượng quần \\
+       & thực      & lương thực & áo       & áo         \\
+       & (1000Đ)   & (tấn)      & (1000Đ)  & (bộ)       \\
+  \hline
+  2008 & 2         & 100        & 1        & 100        \\
+  \hline
+  2009 & 2,5       & 90         & 0,9      & 120        \\
+  \hline
+  2010 & 2,75      & 105        & 1        & 130        \\
+  \hline
+\end{tabular}
+
+\begin{enumerate}[a.]
+  \item Tính CPI của các năm. \\
+        ta có công thức
+        $$CPI^t = \frac{\sum^{n}_{i=1}p^t_i * q^0_i}{\sum^{n}_{i=1}p^0_i * q^0_i} \times 100$$
+
+        $CPI^{2008} = \frac{2 * 100 + 1 * 100}{2 * 100 + 1 * 100} \times 100 = 100$\\
+        $CPI^{2009} = \frac{2.5 * 100 + 0.9 * 100}{2 * 100 + 1 * 100} \times 100 = \frac{340}{300}  \times 100 = 113 $\\
+        $CPI^{2010} = \frac{2.75 * 100 + 1 * 100}{2 * 100 + 1 * 100} \times 100 = \frac{375}{300}  \times 100 = 125 $\\
+
+  \item  Tính tỷ lệ lạm phát của năm 2009 và 2010.
+        $$\Pi^t = \frac{CPI^t - CPI^{t -1}}{CPI^{t -1}} \times 100$$
+        $$\Pi^{2009} = \frac{113 - 100}{100}  \times 100$$
+        $$\Pi^{2010} = \frac{125 - 113}{113}  \times 100$$
+
+  \item  Tính GDP danh nghĩa, GDP thực tế và chỉ số điều chỉnh GDP của các năm? Tính tỉ lệ lạm phát của năm 2009 và 2010 theo chỉ số điều chỉnh GDP \\
+        ta có công thức\\
+        Tốc độ tăng trưởng của nền kinh tế
+        $$g^t = \frac{GDP^{t}_r - GDP^{t - 1}_r}{GDP^{t - 1}_r} \times 100  $$
+        và        
+        $$ GDP^t_n = \sum^{i}_{i = 1} q^t_i  * p^t_i $$
+        n : nominal  $\Rightarrow$ danh nghĩa
+        $$ GDP^t_r = \sum^{i}_{i = 1} q^t_i  * p^0_i $$
+        r: real $\Rightarrow$ thực tế\\
+        Chỉ số điều chỉnh GDP
+        $$D^t_{GDP} = \frac{GDP^t_n}{GDP^t_r} \times 100$$
+
+        $$ GDP^{2008}_n = 2 * 100 +1 * 100 = 300 $$
+        $$ GDP^{2009}_n = 2.5 * 90 + 0.9 * 120 = 225 + 108 = 313 $$
+        $$ GDP^{2010}_n = 2.75 * 105 + 1 * 130 = 288.75 + 130 = 418.75 $$
+
+        $$ GDP^{2008}_r = 2 * 100 + 1 * 100 = 300 $$
+        $$ GDP^{2009}_r = 2 * 90 + 1 * 120 = 180 + 120 = 300 $$
+        $$ GDP^{2010}_r = 2 * 105 + 1 * 130 = 210 + 130 = 340 $$
+
+        $$D^{2008}_{GDP} = \frac{300}{300} \times 100$$
+        $$D^{2009}_{GDP} = \frac{313}{300} \times 100$$
+        $$D^{2010}_{GDP} = \frac{418.75}{340} \times 100$$ 
+        để tính tỷ lệ lạm phát chúng ta cần biết CPI\\
+        vậy ta càn tìm sự liên hệ gữa CPI và D "chỉ số điều chỉnh"\\
+        $$D^t_{GDP} = \frac{GDP^t_n}{GDP^t_r} \times 100 \Rightarrow \frac{100}{D^t_{GDP}} = \frac{GDP^t_r}{GDP^t_n} \Rightarrow \frac{100 * GDP^t_n}{D^t_{GDP}} = GDP^t_r $$
+        $CPI^t = \frac{\sum^{n}_{i=1}p^t_i * q^0_i}{\sum^{n}_{i=1}p^0_i * q^0_i} \times 100 = \frac{GDP^t_r}{GDP^0_r}  \times 100 $\\
+        \[\Pi^t = \frac{CPI^t - CPI^{t -1}}{CPI^{t -1}} \times 100 = \frac{\frac{GDP^t_r}{GDP^0_r} - \frac{GDP^{t-1}_r}{GDP^0_r}}{\frac{GDP^{t-1}_r}{GDP^0_r}} \times 100 = \frac{GDP^t_r - GDP^{t-1}_r}{GDP^{t-1}_r} \times 100\]
+        $ = \frac{GDP^t_r}{GDP^{t-1}_r} \times 100 - 100 = \frac{GDP^t_n * D^{t-1}_{GDP}}{D^t_{GDP}* GDP^{t-1}_n} \times 100 - 100$\\
+        $ = \frac{GDP^t_n * D^{t-1}_{GDP} - D^t_{GDP}* GDP^{t-1}_n }{D^t_{GDP}* GDP^{t-1}_n} \times 100$
+
+
+\end{enumerate}
+
+
+\section{Tại năm 2007, một người có mức thu nhập là 150 triệu đồng/năm.}
+Tại năm 2007, một người có mức thu nhập là 150 triệu đồng/năm. Năm 2017 thu nhập 
+của anh ta là 255 triệu đồng/năm. Biết CPI năm 2007 là 112 và CPI năm 2017 là 168. Vậy tại 
+năm 2017 người này được xem là có mức sống cao hơn, thấp hơn hay tương đương với năm 
+2007?
+
+Để làm bài này chúng ta xem lại 8.1.5. Điều chỉnh các biến số kinh tế 
+theo lạm phát.\\
+theo đó ta tính như sau\\
+thu nhập năm 2017 tính theo 2007 = thu nhập 2007 * ($CPI_{2017}/CPI_{2007}$)\\
+$= 150 * 168 / 112 = 225$\\
+vậy người này có mức sống cao hơn
+
+Lãi suất danh nghĩa là 7$\%$/năm, tỉ lệ lạm phát là 3\%/năm. Mức thuế suất đánh vào 
+thu nhập từ tiền lãi là 10\%. Tính lãi suất thực tế sau thuế?
+
+theo 8.1.5. Điều chỉnh các biến số kinh tế 
+theo lạm phát chúng ta có \\
+- Lãi suất danh nghĩa (nominal interest rate – i)  \\
+- Lãi suất thực tế (real interest rate – r) \\
+- lãi suất thực tế mới là cái thực sự được quan tâm \\
+$$r = i - \pi$$
+và theo nội dung của slide "Tác hại của lạm phát ( tiếp)"\\ 
+chúng ta có bảng sau\\
+\begin{tabular}{|l|r|}
+  \hline
+  Lãi suất danh nghĩa(nominal interest: i) & 7\% \\
+  \hline
+Tỷ lệ lạm phát ($\pi$ ) & 3\% \\
+\hline
+Lãi suất thực tế (real interest: r = i – $\pi$) & 4\% \\
+\hline
+Thuế (10\%* i) & 0.7\%\\
+\hline
+Lãi suất danh nghĩa sau thuế &   7\% - 0.7\% = 6.3\% \\
+$i_{\textmd{sau thuế}} = i - 10\%*i$ & \\
+\hline
+Lãi suất thực tế sau thuế & 6.3\% - 3\% = 3.3\% \\
+$r_{\textmd{sau thuế}} = i_{\textmd{sau thuế}} - \pi$ & \\
+\hline
+\end{tabular}
+
+\section{. Vào thời điểm ngày 1/7/2004 tai một nước A,}
+Vào thời điểm ngày 1/7/2004 tai một nước A, tổng dân số nước A là 82 triệu người, 
+số người có việc làm là 41,6 triệu người, số người thất nghiệp là 0,9 triệu người. Số người 
+ngoài độ tuổi lao động chiếm 45 \% dân số. Hãy tính:
+\begin{enumerate}[-]
+  \item Số người trong độ tuổi lao động \\
+  = tổng dân số - Số người ngoài độ tuổi lao động = 82 - 0.45 * 82 = 45.1  
+  \item Tỉ lệ tham gia lực lượng lao động \\
+  Tỷ lệ tham gia lực lượng lao động = (lực lượng lao động / tổng số người trưởng thành)*100\% \\
+  = (số người có việc làm + số người thất nghiệp) / Số người trong độ tuổi lao động * 100\% \\
+  = (41.6 + 0.9) / 45.1 * 100\% = 42.5 / 45.1 * 100\% =  94.235\% = 94.23\%
+  \item Tỉ lệ thất nghiệp \\
+  Tỷ lệ thất nghiệp = (số người thất nghiệp / lực 
+lượng lao động)*100\%. \\
+  = 0.9 / 45.1 *100\% = 1.99556541\%  $\approx$ 1.995\% $\approx$ 1.99\%
+  \item Tỷ lệ người có việc làm \\
+  Tỷ lệ người có việc làm = (người có việc làm/ lực 
+lượng lao động)*100\% \\
+  = 41.6 / 45.1 *100\% = 92.23946784\% $\approx$ 92.24 \%
+\end{enumerate}
+

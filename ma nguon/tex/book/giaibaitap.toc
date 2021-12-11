@@ -1,0 +1,36 @@
+\contentsline {chapter}{\numberline {3}CÁC LỰC LƯỢNG CUNG CẦU TRÊN THỊ TRƯỜNG}{3}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Điều gì xảy ra với giá và lượng cân bằng trên thị trường máy lạnh trong các tình huống sau:}{3}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Cung – cầu về sản phẩm Y có dạng: $Q_S = 2P - 8$ và $Q_D = 15 - 0.5P$ (trong đó Q tính bằng triệu tấn, P tính bằng nghìn đồng/tấn)}{3}{section.3.2}%
+\contentsline {section}{\numberline {3.3} Cho số liệu về cung – cầu sản phẩm A như sau:}{7}{section.3.3}%
+\contentsline {section}{\numberline {3.4} Cho thị trường hàng hóa A có phương trình đường cung và đường cầu như sau: $P_S = 0,2Q - 10$ và $P_D = 20 - 0.2Q$ (bỏ qua đơn vị của giá và lượng)}{9}{section.3.4}%
+\contentsline {section}{\numberline {3.5} Hàm cầu về sản phẩm X trên thị trường được cho bởi phương trình: $P = 100 - 0,05Q_D$; trong đó Q là sản lượng tính bằng đơn vị, P tính bằng \$. Cung sản phẩm X luôn cố định ở mức 1100 đơn vị.}{11}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Bài 6. Xác định hàm cung và hàm cầu trong các trường hợp sau:}{13}{section.3.6}%
+\contentsline {chapter}{\numberline {4}HỆ SỐ CO GIÃN}{16}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Tính hệ số co giãn của cầu theo giá của các hàng hóa thịt bò, áo sơ mi, biết rằng:}{16}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Hàm cầu về bánh mỳ của công ty Kinh Đô như sau: $Q_D = 40 - 5P$ (Q :nghìn chiếc ; P: nghìn đồng/chiếc)}{16}{section.4.2}%
+\contentsline {section}{\numberline {4.3} Giả sử thu nhập hàng tháng của hộ gia đình giảm từ \$10.000 xuống còn \$6.000, trong khi tiêu dùng hàng tháng về sản phẩm X của họ tăng từ 200 lên 400}{19}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Hàm cầu của hàng hóa A theo thu nhập được biểu diễn như sau: $Q = 100I + 1000$ }{19}{section.4.4}%
+\contentsline {section}{\numberline {4.5} Lượng cầu về cam khi giá quýt thay đổi được cho ở biểu sau:}{20}{section.4.5}%
+\contentsline {section}{\numberline {4.6} Một công ty ước lượng được hàm cầu đối với sản phẩm của mình như sau: $Q_X = 1000 - 0.6P_Y$ . Trong đó $Q_X$ là lượng cầu đối với hàng hóa X do công ty kinh doanh và $P_Y$ là giá của hàng hóa Y có liên quan với hàng hóa X}{21}{section.4.6}%
+\contentsline {section}{\numberline {4.7} Một người tiêu dùng, tháng nào cũng mua hai sản phẩm X và Y, thu nhập sẵn có của ông ta thay đổi qua các tháng. Chúng ta có 6 quan sát những lượng sản phẩm X được tiêu thụ trong khi giá của X, giá của Y và thu nhập sẵn có thay đổi như sau:}{23}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Phương trình đường cầu cà phê được cho bởi: $Q_X = 15 - 3P_X + 0,08I - 0,6P_Y$}{25}{section.4.8}%
+\contentsline {section}{\numberline {4.9} Một công ty sản xuất thép có: hệ số co giãn của cầu về thép đối với giá thép}{27}{section.4.9}%
+\contentsline {chapter}{\numberline {5}NGƯỜI TIÊU DÙNG, NGƯỜI SẢN XUẤT VÀ HIỆU QUẢ THỊ TRƯỜNG}{29}{chapter.5}%
+\contentsline {section}{\numberline {5.1} Có biểu cầu về một hàng hoá như sau:}{29}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Cung và cầu của hàng hóa X có phương trình như sau:}{31}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Hàm cầu và hàm cung của trứng gà như sau:}{32}{section.5.3}%
+\contentsline {chapter}{\numberline {6}CHÍNH SÁCH CỦA CHÍNH PHỦ}{35}{chapter.6}%
+\contentsline {section}{\numberline {6.1} Sản phẩm X có hàm cung và hàm cầu là:}{35}{section.6.1}%
+\contentsline {section}{\numberline {6.2} Thị trường thịt gà có phương trình hàm cung và cầu như sau:}{36}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Thị trường mỳ tôm có phương trình }{38}{section.6.3}%
+\contentsline {section}{\numberline {6.4} Hàm số cầu của táo hàng năm có dạng }{41}{section.6.4}%
+\contentsline {chapter}{\numberline {7}ĐO LƯỜNG THU NHẬP VÀ TĂNG TRƯỞNG KINH TẾ}{44}{chapter.7}%
+\contentsline {section}{\numberline {7.1} Các giả định sau đây ảnh hưởng như thế nào đến các thành tố của GDP theo cách tiếp cận chi tiêu và GDP thay đổi như thế nào.}{44}{section.7.1}%
+\contentsline {section}{\numberline {7.2} Một nền kinh tế chỉ sản xuất bút và sách có thông tin như sau. Năm gốc là năm 2008 }{44}{section.7.2}%
+\contentsline {section}{\numberline {7.3} Cho bảng số liệu sau, Tính tốc độ tăng trưởng kinh tế năm 2009 và 2010 }{45}{section.7.3}%
+\contentsline {chapter}{\numberline {8}LẠM PHÁT VÀ THẤT NGHIỆP}{47}{chapter.8}%
+\contentsline {section}{\numberline {8.1} Một nền kinh tế chỉ sản xuất 2 loại hàng tiêu dùng là lương thực và quần áo có số liệu như sau: (năm 2008 là năm gốc)}{47}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Tại năm 2007, một người có mức thu nhập là 150 triệu đồng/năm.}{49}{section.8.2}%
+\contentsline {section}{\numberline {8.3}. Vào thời điểm ngày 1/7/2004 tai một nước A,}{49}{section.8.3}%
+\contentsline {chapter}{\numberline {9}TIẾT KIỆM, ĐẦU TƯ VÀ HỆ THỐNG TÀI CHÍNH}{51}{chapter.9}%
+\contentsline {section}{\numberline {9.2}Một nền kinh tế đóng có GDP là 1000 tỷ đồng}{51}{section.9.2}%
